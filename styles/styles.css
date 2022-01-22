@@ -263,5 +263,18 @@ template {
 }
 
 /*
-
+Importing relevant fonts
 */
+@font-face {
+  font-family: "Cabin", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Oswald", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+  font-weight: bold;
+}
+html {
+  font-size: 125%;
+}
