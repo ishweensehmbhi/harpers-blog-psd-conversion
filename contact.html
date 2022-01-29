@@ -1,10 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harper's Blog</title>
-  </head>
-  <body></body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Contact Harper | Harper's Blog</title>
+		<link rel="stylesheet" href="./styles/styles.css" />
+	</head>
+	<body>
+		<header id="home">
+			<div class="wrapper">
+				<nav class="pageNav">
+					<ul>
+						<li class="navItem">
+							<a href="#home">HOME</a>
+						</li>
+						<li class="navItem">
+							<a href="#about">ABOUT</a>
+						</li>
+						<li class="navLogo">
+							<a href="">HARPER</a>
+						</li>
+						<li class="navItem">
+							<a href="./blog-post.html">BLOG</a>
+						</li>
+						<li class="navItem">
+							<a href="./contact.html">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- nav ends  -->
+			</div>
+			<!-- div.wrapper ends  -->
+		</header>
+		<!-- header ends  -->
+
+		<section class="headerImg">
+			<img src="./assets/contact-image-1.jpg" alt="" />
+			<!-- use an after for contact me?  -->
+		</section>
+
+		<main>
+			<section id="#contact">
+				<div class="wrapper">
+					<aside class="addressAndSocialsBar">
+						<ul class="socialsBar">
+							<li>
+								<a
+									class="socialItem"
+									href="https://www.facebook.com/"
+									aria-label="Visit Harper on Facebook"
+								>
+									<i
+										aria-hidden="true"
+										class="fab fa-facebook-f"
+									></i>
+								</a>
+							</li>
+							<li>
+								<a
+									class="socialItem"
+									href="https://www.twitter.com/"
+									aria-label="Visit Harper on Twitter"
+								>
+									<i
+										aria-hidden="true"
+										class="fab fa-twitter"
+									></i>
+								</a>
+							</li>
+							<li>
+								<a
+									class="socialItem"
+									href="https://www.linkedin.com/"
+									aria-label="Visit Harper on LinkedIn"
+								>
+									<i
+										aria-hidden="true"
+										class="fab fa-linkedin-in"
+									></i>
+								</a>
+							</li>
+							<li>
+								<a
+									class="socialItem"
+									href="https://www.instagram.com/"
+									aria-label="Visit Harper on Instagram"
+								>
+									<i
+										aria-hidden="true"
+										class="fab fa-instagram"
+									></i>
+								</a>
+							</li>
+						</ul>
+						<!-- end socials bar  -->
+
+						<!-- emal and street address  -->
+						<a href="mailto:info@email.com"
+							><p>info@email.com</p></a
+						>
+
+						<p>123-456-7890</p>
+						<p>123 Queen Street West, Unit 10</p>
+						<p>Toronto, Ontario</p>
+						<p>M5V2D5</p>
+					</aside>
+					<!--  -->
+					<!-- ASIDE ENDS HERE  -->
+					<div class="formContainer">
+						<form
+							action=""
+							class="contactHarper"
+							name="contactHarper"
+						>
+							<legend>Contact Harper</legend>
+							<label for="name" class="sr-only"
+								>Enter Your Name</label
+							>
+							<input
+								type="text"
+								name="name"
+								id="name"
+								placeholder="Name"
+							/>
+
+							<label for="email" class="sr-only"
+								>Enter Your Email</label
+							>
+							<input
+								type="text"
+								name="email"
+								id="email"
+								placeholder="Email address"
+							/>
+							<label for="comments" class="sr-only"
+								>Enter Your Comments</label
+							>
+							<textarea
+								name="comments"
+								id="comments"
+								cols="30"
+								rows="10"
+							></textarea>
+							<button
+								class="submitButton"
+								type="submit"
+							>
+								POST COMMENT
+							</button>
+						</form>
+						<!-- form ends  -->
+					</div>
+					<!-- form container ends  -->
+				</div>
+				<!-- wrapper ends  -->
+			</section>
+			<!-- contact section ends  -->
+		</main>
+		<footer>
+			<p class="footerText">Copyright © 2018 HackerYou</p>
+		</footer>
+	</body>
 </html>
