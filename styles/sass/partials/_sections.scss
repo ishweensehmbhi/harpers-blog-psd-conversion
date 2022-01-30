@@ -1,0 +1,23 @@
+.buttonContainer {
+	background-color: $secondary;
+	width: 200px;
+	padding: 20px 50px;
+	a {
+		text-align: center;
+	}
+}
+
+.imgGallery {
+	padding: 100px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	.imgGalleryItem {
+		padding: 15px;
+		width: calc(100% / 3 - 15px);
+		img {
+			object-fit: cover;
+			max-width: 100%;
+		}
+	}
+}

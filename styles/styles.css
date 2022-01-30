@@ -346,8 +346,8 @@ header {
 }
 .pageNav li a {
   color: #171717;
-  -webkit-transition: color 0.2 5s;
-  transition: color 0.2 5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 .pageNav li a:focus, .pageNav li a:hover {
   color: #f6f6f6;
@@ -356,6 +356,38 @@ header {
 }
 .pageNav li a:focus {
   border: 1px dashed #f6f6f6;
+}
+
+.buttonContainer {
+  background-color: #f38d8d;
+  width: 200px;
+  padding: 20px 50px;
+}
+.buttonContainer a {
+  text-align: center;
+}
+
+.imgGallery {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.imgGallery .imgGalleryItem {
+  padding: 15px;
+  width: calc(100% / 3 - 15px);
+}
+.imgGallery .imgGalleryItem img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
 }
 
 footer {
