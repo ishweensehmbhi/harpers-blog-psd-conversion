@@ -1,3 +1,31 @@
 header {
 	background-color: $quaternary;
 }
+
+.flexContainer {
+	display: flex;
+	flex-direction: row;
+	height: 30rem;
+	.homeImgContainer {
+		width: 35%;
+		margin-top: 40px;
+		img {
+			width: 100%;
+			box-shadow: 20px 20px $white;
+		}
+	}
+	.homeLogoContainer {
+		width: 65%;
+		align-items: center;
+		h1 {
+			margin: 15rem 0px 0px 7rem;
+			position: relative;
+		}
+		h1::after {
+			content: url(../assets/circle-text.png);
+			position: absolute;
+			top: -103px;
+			right: 150px;
+		}
+	}
+}

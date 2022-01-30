@@ -265,7 +265,8 @@ ul {
 }
 
 .wrapper {
-  max-width: 1080px;
+  max-width: 1260px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -294,6 +295,11 @@ h3 {
   font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
   color: #171717;
+}
+
+h1 {
+  margin: 0;
+  font-size: 6rem;
 }
 
 a {
@@ -327,9 +333,45 @@ header {
   background-color: #b9dde7;
 }
 
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 30rem;
+}
+.flexContainer .homeImgContainer {
+  width: 35%;
+  margin-top: 40px;
+}
+.flexContainer .homeImgContainer img {
+  width: 100%;
+  -webkit-box-shadow: 20px 20px #f6f6f6;
+          box-shadow: 20px 20px #f6f6f6;
+}
+.flexContainer .homeLogoContainer {
+  width: 65%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flexContainer .homeLogoContainer h1 {
+  margin: 15rem 0px 0px 7rem;
+  position: relative;
+}
+.flexContainer .homeLogoContainer h1::after {
+  content: url(../assets/circle-text.png);
+  position: absolute;
+  top: -103px;
+  right: 150px;
+}
+
 .pageNav {
   background-color: #b9dde7;
-  padding: 30px 0px 60px;
+  padding: 30px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,15 +398,6 @@ header {
 }
 .pageNav li a:focus {
   border: 1px dashed #f6f6f6;
-}
-
-.buttonContainer {
-  background-color: #f38d8d;
-  width: 200px;
-  padding: 20px 50px;
-}
-.buttonContainer a {
-  text-align: center;
 }
 
 .imgGallery {
