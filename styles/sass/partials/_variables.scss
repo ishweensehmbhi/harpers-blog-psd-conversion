@@ -1,5 +1,14 @@
 /* site fonts */
-$headingFonts: "Oswald";
-$bodyFont: "Cabin";
+$headingFont: "Oswald", sans-serif;
+$bodyFont: "Cabin", sans-serif;
 
-/* */
+/* base font size */
+$baseFontSize: 1rem;
+
+/* site colours */
+$primary: #68b0c1;
+$secondary: #f38d8d;
+$tertiary: #227284;
+$quaternary: #b9dde7;
+$white: #f6f6f6;
+$black: #171717;

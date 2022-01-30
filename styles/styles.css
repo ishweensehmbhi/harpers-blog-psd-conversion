@@ -59,10 +59,6 @@ abbr[title] {
 b,
 strong {
   font-weight: inherit;
-}
-
-b,
-strong {
   font-weight: bolder;
 }
 
@@ -262,6 +258,24 @@ template {
   overflow: hidden;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* site fonts */
+/* base font size */
+/* site colours */
 /*
 Importing relevant fonts
 */
@@ -277,4 +291,44 @@ Importing relevant fonts
 }
 html {
   font-size: 125%;
+}
+
+header {
+  background-color: #b9dde7;
+}
+
+.pageNav {
+  background-color: #b9dde7;
+}
+.pageNav ul {
+  padding: 30px 0px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pageNav ul li {
+  padding: 0px 15px;
+}
+.pageNav ul li a {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+  color: #171717;
+  -webkit-transition: color 0.2 5s;
+  transition: color 0.2 5s;
+}
+.pageNav ul li a:focus, .pageNav ul li a:hover {
+  color: #f6f6f6;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.pageNav ul li a:focus {
+  border: 1px dashed #f6f6f6;
 }
