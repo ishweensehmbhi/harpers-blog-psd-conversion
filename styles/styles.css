@@ -274,23 +274,53 @@ a {
 }
 
 /* site fonts */
-/* base font size */
+/* base font size, 20px - 125% - 1rem */
 /* site colours */
-/*
-Importing relevant fonts
-*/
-@font-face {
-  font-family: "Cabin", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Oswald", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
-  font-weight: bold;
-}
 html {
   font-size: 125%;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  font-size: 1rem;
+  color: #171717;
+  letter-spacing: 0px;
+  line-height: 32px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+  color: #171717;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pageNav {
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  line-height: 29px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.pageNav a {
+  font-size: 1rem;
+}
+.pageNav .navLogo {
+  font-size: 2rem;
+}
+.pageNav .navLogo p {
+  margin: 0;
+}
+
+.footerText {
+  color: #f6f6f6;
+  margin: 0;
+  padding: 15px 0;
 }
 
 header {
@@ -299,8 +329,6 @@ header {
 
 .pageNav {
   background-color: #b9dde7;
-}
-.pageNav ul {
   padding: 30px 0px 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,22 +341,29 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.pageNav ul li {
-  padding: 0px 15px;
+.pageNav li {
+  padding: 0px 25px;
 }
-.pageNav ul li a {
-  font-size: 1.2rem;
-  font-weight: normal;
-  font-family: "Cabin", sans-serif;
+.pageNav li a {
   color: #171717;
   -webkit-transition: color 0.2 5s;
   transition: color 0.2 5s;
 }
-.pageNav ul li a:focus, .pageNav ul li a:hover {
+.pageNav li a:focus, .pageNav li a:hover {
   color: #f6f6f6;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
-.pageNav ul li a:focus {
+.pageNav li a:focus {
   border: 1px dashed #f6f6f6;
+}
+
+footer {
+  background-color: #171717;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

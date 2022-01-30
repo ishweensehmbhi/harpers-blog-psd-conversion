@@ -1,26 +1,21 @@
 .pageNav {
 	background-color: $quaternary;
-	ul {
-		padding: 30px 0px 60px;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		li {
-			padding: 0px 15px;
-			a {
-				font-size: 1.2rem;
-				font-weight: normal;
-				font-family: $bodyFont;
-				color: $black;
-				transition: color 0.2 5s;
-				&:focus,
-				&:hover {
-					color: $white;
-					transition: color 0.5s;
-				}
-				&:focus {
-					border: 1px dashed $white;
-				}
+	padding: 30px 0px 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	li {
+		padding: 0px 25px;
+		a {
+			color: $black;
+			transition: color 0.2 5s;
+			&:focus,
+			&:hover {
+				color: $white;
+				transition: color 0.5s;
+			}
+			&:focus {
+				border: 1px dashed $white;
 			}
 		}
 	}
