@@ -15,8 +15,7 @@ header {
 		}
 	}
 	.homeLogoContainer {
-		width: 65%;
-		align-items: center;
+		width: calc(65%-7rem);
 		h1 {
 			margin: 15rem 0px 0px 7rem;
 			position: relative;
@@ -24,8 +23,8 @@ header {
 		h1::after {
 			content: url(../assets/circle-text.png);
 			position: absolute;
-			top: -103px;
-			right: 150px;
+			top: -118px;
+			right: -55px;
 		}
 	}
 }

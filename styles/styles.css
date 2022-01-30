@@ -299,7 +299,7 @@ h3 {
 
 h1 {
   margin: 0;
-  font-size: 6rem;
+  font-size: 7rem;
 }
 
 a {
@@ -353,10 +353,7 @@ header {
           box-shadow: 20px 20px #f6f6f6;
 }
 .flexContainer .homeLogoContainer {
-  width: 65%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: calc(65%-7rem);
 }
 .flexContainer .homeLogoContainer h1 {
   margin: 15rem 0px 0px 7rem;
@@ -365,8 +362,8 @@ header {
 .flexContainer .homeLogoContainer h1::after {
   content: url(../assets/circle-text.png);
   position: absolute;
-  top: -103px;
-  right: 150px;
+  top: -118px;
+  right: -55px;
 }
 
 .pageNav {
@@ -398,6 +395,10 @@ header {
 }
 .pageNav li a:focus {
   border: 1px dashed #f6f6f6;
+}
+
+.aboutSection {
+  padding: 100px 15px;
 }
 
 .imgGallery {
