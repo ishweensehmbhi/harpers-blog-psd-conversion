@@ -119,4 +119,47 @@ h3 {
 	}
 }
 
-/**/
+.socialsBar {
+	font-size: 1.3rem;
+}
+
+.addressAndSocialsAside {
+	p {
+		margin: 0;
+	}
+	.emailAddress {
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+		font-family: $headingFont;
+		font-size: 1rem;
+		line-height: 29px;
+		letter-spacing: 1px;
+		p {
+			padding: 12px 0;
+		}
+	}
+}
+
+form legend {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.formContainer button {
+	background: $secondary;
+	font-family: $headingFont;
+	font-size: 1rem;
+	line-height: 32px;
+	letter-spacing: 1px;
+	padding: 20px 50px;
+	border: transparent;
+}
