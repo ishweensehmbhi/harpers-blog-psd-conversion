@@ -61,8 +61,11 @@
 		flex-direction: row;
 		.harpersJourneyImgContainer {
 			width: calc(35% - 100px);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 			img {
-				min-width: 100%;
+				max-width: 100%;
 				object-fit: cover;
 				box-shadow: 10px 10px 0px 2px $tertiary;
 			}
@@ -97,6 +100,51 @@
 		img {
 			object-fit: cover;
 			max-width: 100%;
+		}
+	}
+}
+
+.blogPreviewSection {
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-bottom: 50px;
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.blogPreviewTextContainer {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 50%;
+	}
+	.blogPreviewImgContainer {
+		width: calc(50% - 50px);
+	}
+	.firstBlogPostWrapper {
+		.blogPreviewTextContainer {
+			padding-left: 50px;
+		}
+		a {
+			align-self: flex-start;
+		}
+		h3 {
+			align-self: flex-start;
+		}
+	}
+	.secondBlogPostWrapper {
+		display: flex;
+		.blogPreviewTextContainer {
+			padding-right: 50px;
+		}
+		a {
+			align-self: flex-end;
+		}
+		h3 {
+			align-self: flex-end;
 		}
 	}
 }

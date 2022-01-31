@@ -373,12 +373,12 @@ h3 {
   padding-top: 7px;
 }
 
-.linksSection h3 {
+.linksSection .itemCardContent a {
   opacity: 1;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
-.linksSection h3:hover, .linksSection h3:focus {
+.linksSection .itemCardContent a:hover, .linksSection .itemCardContent a:focus {
   opacity: 0.5;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
@@ -386,6 +386,10 @@ h3 {
 
 .harpersJourney .smallButton {
   width: 300px;
+}
+
+.blogPreviewSection a {
+  width: 250px;
 }
 
 header {
@@ -553,9 +557,19 @@ header {
 }
 .harpersJourney .wrapper .harpersJourneyImgContainer {
   width: calc(35% - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .harpersJourney .wrapper .harpersJourneyImgContainer img {
-  min-width: 100%;
+  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-box-shadow: 10px 10px 0px 2px #227284;
@@ -608,6 +622,68 @@ header {
   max-width: 100%;
 }
 
+.blogPreviewSection .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+}
+.blogPreviewSection .wrapper img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogPreviewSection .blogPreviewTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+.blogPreviewSection .blogPreviewImgContainer {
+  width: calc(50% - 50px);
+}
+.blogPreviewSection .firstBlogPostWrapper .blogPreviewTextContainer {
+  padding-left: 50px;
+}
+.blogPreviewSection .firstBlogPostWrapper a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.blogPreviewSection .firstBlogPostWrapper h3 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.blogPreviewSection .secondBlogPostWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blogPreviewSection .secondBlogPostWrapper .blogPreviewTextContainer {
+  padding-right: 50px;
+}
+.blogPreviewSection .secondBlogPostWrapper a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.blogPreviewSection .secondBlogPostWrapper h3 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 footer {
   background-color: #171717;
   display: -webkit-box;
@@ -616,4 +692,5 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 5px 0;
 }
