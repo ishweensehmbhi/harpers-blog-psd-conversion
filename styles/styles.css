@@ -389,7 +389,7 @@ h3 {
 }
 
 .blogPreviewSection a {
-  width: 250px;
+  width: 210px;
 }
 
 .socialsBar {
@@ -672,8 +672,8 @@ header {
 .blogPreviewSection .firstBlogPostWrapper .blogPreviewImgContainer {
   position: relative;
   top: -40px;
-  -webkit-box-shadow: -600px 11px #68b0c1;
-          box-shadow: -600px 11px #68b0c1;
+  -webkit-box-shadow: -300px 11px #68b0c1;
+          box-shadow: -300px 11px #68b0c1;
 }
 .blogPreviewSection .firstBlogPostWrapper .blogPreviewImgContainer img {
   max-width: 100%;
@@ -698,8 +698,8 @@ header {
 .blogPreviewSection .secondBlogPostWrapper .blogPreviewImgContainer {
   position: relative;
   top: 60px;
-  -webkit-box-shadow: 600px 11px #b9dde7;
-          box-shadow: 600px 11px #b9dde7;
+  -webkit-box-shadow: 300px 11px #b9dde7;
+          box-shadow: 300px 11px #b9dde7;
 }
 .blogPreviewSection .secondBlogPostWrapper .blogPreviewImgContainer img {
   max-width: 100%;
