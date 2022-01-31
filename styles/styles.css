@@ -369,6 +369,23 @@ h3 {
   font-size: 1.6rem;
   letter-spacing: 1px;
   color: #171717;
+  margin: 0;
+  padding-top: 7px;
+}
+
+.linksSection h3 {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.linksSection h3:hover, .linksSection h3:focus {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.harpersJourney .smallButton {
+  width: 300px;
 }
 
 header {
@@ -406,6 +423,11 @@ header {
   position: absolute;
   top: -118px;
   right: -55px;
+}
+
+.headerImage img {
+  width: 100%;
+  height: 100%;
 }
 
 .pageNav {
@@ -516,12 +538,53 @@ header {
   right: 15px;
 }
 
-h3 {
-  margin: 0;
+.harpersJourney {
+  background-color: #f6f6f6;
+  padding: 100px 0;
+}
+.harpersJourney .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.harpersJourney .wrapper .harpersJourneyImgContainer {
+  width: calc(35% - 100px);
+}
+.harpersJourney .wrapper .harpersJourneyImgContainer img {
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 10px 10px 0px 2px #227284;
+          box-shadow: 10px 10px 0px 2px #227284;
+}
+.harpersJourney .wrapper .harpersJourneyTextContainer {
+  width: 65%;
+  margin-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+}
+.harpersJourney .wrapper .harpersJourneyTextContainer h2 {
+  padding-bottom: 15px;
+}
+.harpersJourney .wrapper .harpersJourneyTextContainer p {
+  padding-bottom: 10px;
 }
 
 .imgGallery {
-  padding: 150px 0;
+  padding: 80px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

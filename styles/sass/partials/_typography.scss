@@ -89,4 +89,24 @@ h3 {
 	font-size: 1.6rem;
 	letter-spacing: 1px;
 	color: $black;
+	margin: 0;
+	padding-top: 7px;
+}
+
+.linksSection {
+	h3 {
+		opacity: 1;
+		transition: opacity 0.5s;
+		&:hover,
+		&:focus {
+			opacity: 0.5;
+			transition: opacity 0.5s;
+		}
+	}
+}
+
+.harpersJourney {
+	.smallButton {
+		width: 300px;
+	}
 }

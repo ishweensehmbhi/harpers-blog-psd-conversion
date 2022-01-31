@@ -53,12 +53,40 @@
 	}
 }
 
-h3 {
-	margin: 0;
+.harpersJourney {
+	background-color: $white;
+	padding: 100px 0;
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		.harpersJourneyImgContainer {
+			width: calc(35% - 100px);
+			img {
+				min-width: 100%;
+				object-fit: cover;
+				box-shadow: 10px 10px 0px 2px $tertiary;
+			}
+		}
+		.harpersJourneyTextContainer {
+			width: 65%;
+			margin-left: 100px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			text-align: left;
+			h2 {
+				padding-bottom: 15px;
+			}
+
+			p {
+				padding-bottom: 10px;
+			}
+		}
+	}
 }
 
 .imgGallery {
-	padding: 150px 0;
+	padding: 80px 0;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
