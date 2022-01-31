@@ -948,13 +948,26 @@ header {
 .blogContent {
   width: 65%;
 }
-
-.blogPost {
+.blogContent .blogPost {
   background-color: #ffffff;
   padding: 30px;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+  border-bottom: 5px solid #227284;
 }
-.blogPost h2 {
+.blogContent .blogPost h2 {
   margin: 20px 0px 30px;
+}
+.blogContent .blogComment {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #ffffff;
 }
 
 footer {

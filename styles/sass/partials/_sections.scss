@@ -299,12 +299,21 @@
 
 .blogContent {
 	width: 65%;
-}
+	.blogPost {
+		background-color: $pureWhite;
+		padding: 30px;
+		padding-bottom: 60px;
+		margin-bottom: 30px;
+		border-bottom: 5px solid $tertiary;
+		h2 {
+			margin: 20px 0px 30px;
+		}
+	}
 
-.blogPost {
-	background-color: $pureWhite;
-	padding: 30px;
-	h2 {
-		margin: 20px 0px 30px;
+	.blogComment {
+		padding: 30px;
+		display: flex;
+		flex-direction: row;
+		background-color: $pureWhite;
 	}
 }
