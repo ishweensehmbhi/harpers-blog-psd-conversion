@@ -263,7 +263,7 @@
 			width: calc(50% - 15px);
 			padding: 15px;
 			height: 60px;
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 			border: transparent;
 		}
 		input[type="email"] {
@@ -336,14 +336,13 @@
 		}
 		a {
 			color: black;
-			transition: color 0.25s;
+			transition: color 0.15s;
 			&:hover,
 			&:focus,
 			&:active {
 				color: $tertiary;
-				transition: color 0.25s;
+				transition: color 0.15s;
 				text-decoration: underline;
-				font-weight: bold;
 			}
 		}
 	}
@@ -355,15 +354,17 @@
 		}
 		a {
 			color: black;
-			transition: color 0.25s;
+			transition: color 0.15s;
 			&:hover,
 			&:focus,
 			&:active {
 				color: $tertiary;
-				transition: color 0.25s;
-				font-weight: bold;
+				transition: color 0.15s;
 				text-decoration: underline;
 			}
+		}
+		h4 {
+			margin-top: 10px;
 		}
 	}
 }
@@ -381,11 +382,11 @@
 	}
 
 	.blogComment {
-		padding: 10px 30px;
+		padding: 20px 30px;
 		display: flex;
 		flex-direction: row;
 		background-color: $pureWhite;
-		margin-top: 30px;
+		margin-top: 20px;
 		.blogCommentImgContainer {
 			display: flex;
 			flex-direction: column;

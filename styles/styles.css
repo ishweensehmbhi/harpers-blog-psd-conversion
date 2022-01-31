@@ -388,14 +388,17 @@ h3 {
   padding-top: 7px;
 }
 
-.linksSection .itemCardHeading {
+.linksSection a {
+  text-decoration: none;
   color: #171717;
 }
-.linksSection .itemCardHeading:hover, .linksSection .itemCardHeading:focus, .linksSection .itemCardHeading:active {
-  color: #b9dde7;
+.linksSection a:hover, .linksSection a:focus, .linksSection a:active {
   text-decoration: underline;
-  -webkit-filter: drop-shadow(1px 1px 1px #f38d8d);
-          filter: drop-shadow(1px 1px 1px #f38d8d);
+  -webkit-text-decoration-color: #171717;
+          text-decoration-color: #171717;
+  text-decoration-thickness: 3px;
+  -webkit-filter: drop-shadow(1px 1px 1px #68b0c1);
+          filter: drop-shadow(1px 1px 1px #68b0c1);
 }
 
 .harpersJourney .smallButton {
@@ -914,7 +917,7 @@ header {
   width: calc(50% - 15px);
   padding: 15px;
   height: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border: transparent;
 }
 .formContainer form input[type=email] {
@@ -1009,15 +1012,14 @@ header {
 }
 .blogAside .firstAsideSection a {
   color: black;
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
+  -webkit-transition: color 0.15s;
+  transition: color 0.15s;
 }
 .blogAside .firstAsideSection a:hover, .blogAside .firstAsideSection a:focus, .blogAside .firstAsideSection a:active {
   color: #227284;
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
+  -webkit-transition: color 0.15s;
+  transition: color 0.15s;
   text-decoration: underline;
-  font-weight: bold;
 }
 .blogAside .secondAsideSection {
   margin-top: 20px;
@@ -1028,15 +1030,17 @@ header {
 }
 .blogAside .secondAsideSection a {
   color: black;
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
+  -webkit-transition: color 0.15s;
+  transition: color 0.15s;
 }
 .blogAside .secondAsideSection a:hover, .blogAside .secondAsideSection a:focus, .blogAside .secondAsideSection a:active {
   color: #227284;
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
-  font-weight: bold;
+  -webkit-transition: color 0.15s;
+  transition: color 0.15s;
   text-decoration: underline;
+}
+.blogAside .secondAsideSection h4 {
+  margin-top: 10px;
 }
 
 .blogContent {
@@ -1052,7 +1056,7 @@ header {
   margin: 20px 0px 30px;
 }
 .blogContent .blogComment {
-  padding: 10px 30px;
+  padding: 20px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1061,7 +1065,7 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #ffffff;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .blogContent .blogComment .blogCommentImgContainer {
   display: -webkit-box;
