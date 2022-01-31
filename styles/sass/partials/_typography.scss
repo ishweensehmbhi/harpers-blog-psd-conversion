@@ -49,3 +49,44 @@ a {
 	margin: 0;
 	padding: 15px 0;
 }
+
+h2 {
+	font-family: $headingFont;
+	font-size: 2.1rem;
+	color: $black;
+	letter-spacing: 1px;
+	margin: 0;
+}
+
+.smallCopy {
+	margin: 30px 0 50px;
+	font-family: $bodyFont;
+	color: $black;
+	line-height: 32px;
+	letter-spacing: 0px;
+}
+
+.smallButton {
+	font-family: $headingFont;
+	font-size: 1rem;
+	line-height: 32px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: $black;
+	background-color: $secondary;
+	padding: 15px 50px;
+	opacity: 1;
+	transition: opacity 0.5s;
+	&:hover,
+	&:focus {
+		opacity: 0.75;
+		transition: opacity 0.5s;
+	}
+}
+
+h3 {
+	font-family: $headingFont;
+	font-size: 1.6rem;
+	letter-spacing: 1px;
+	color: $black;
+}
