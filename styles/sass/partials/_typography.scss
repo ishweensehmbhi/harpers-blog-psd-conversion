@@ -101,18 +101,14 @@ h3 {
 }
 
 .linksSection {
-	.itemCardContent {
-		h3 {
-			color: $black;
-			transition: color 0.25s;
-			&:hover,
-			&:focus,
-			&:active {
-				color: $tertiary;
-				transition: color 0.25s;
-				transition: filter 0.5s;
-				filter: drop-shadow(1px 1px 5px $quaternary);
-			}
+	.itemCardHeading {
+		color: $black;
+		&:hover,
+		&:focus,
+		&:active {
+			color: $quaternary;
+			text-decoration: underline;
+			filter: drop-shadow(1px 1px 1px $secondary);
 		}
 	}
 }

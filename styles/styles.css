@@ -388,21 +388,14 @@ h3 {
   padding-top: 7px;
 }
 
-.linksSection .itemCardContent h3 {
+.linksSection .itemCardHeading {
   color: #171717;
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
 }
-.linksSection .itemCardContent h3:hover, .linksSection .itemCardContent h3:focus, .linksSection .itemCardContent h3:active {
-  color: #227284;
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
-  -webkit-transition: -webkit-filter 0.5s;
-  transition: -webkit-filter 0.5s;
-  transition: filter 0.5s;
-  transition: filter 0.5s, -webkit-filter 0.5s;
-  -webkit-filter: drop-shadow(1px 1px 5px #b9dde7);
-          filter: drop-shadow(1px 1px 5px #b9dde7);
+.linksSection .itemCardHeading:hover, .linksSection .itemCardHeading:focus, .linksSection .itemCardHeading:active {
+  color: #b9dde7;
+  text-decoration: underline;
+  -webkit-filter: drop-shadow(1px 1px 1px #f38d8d);
+          filter: drop-shadow(1px 1px 1px #f38d8d);
 }
 
 .harpersJourney .smallButton {
@@ -638,6 +631,13 @@ header {
   position: absolute;
   top: 15px;
   right: 15px;
+}
+.linksSection .itemCardShadow .fa-tv {
+  top: 17px;
+  right: 13px;
+}
+.linksSection .itemCardShadow .fa-user {
+  right: 16px;
 }
 
 .blogPreviewSection .wrapper {
