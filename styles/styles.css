@@ -542,9 +542,98 @@ header {
   right: 15px;
 }
 
+.blogPreviewSection .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blogPreviewSection .wrapper img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogPreviewSection .blogPreviewTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(50% - 50px);
+}
+.blogPreviewSection .blogPreviewImgContainer {
+  width: 50%;
+}
+.blogPreviewSection .firstBlogPostWrapper .blogPreviewTextContainer {
+  margin-left: 50px;
+}
+.blogPreviewSection .firstBlogPostWrapper a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 50px;
+}
+.blogPreviewSection .firstBlogPostWrapper p {
+  margin-left: 50px;
+}
+.blogPreviewSection .firstBlogPostWrapper h3 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 50px;
+}
+.blogPreviewSection .firstBlogPostWrapper .blogPreviewImgContainer {
+  position: relative;
+  top: -40px;
+  -webkit-box-shadow: -300px 11px #68b0c1;
+          box-shadow: -300px 11px #68b0c1;
+}
+.blogPreviewSection .firstBlogPostWrapper .blogPreviewImgContainer img {
+  max-width: 100%;
+  -webkit-box-shadow: 20px 20px #68b0c1, 0px 15px #68b0c1;
+          box-shadow: 20px 20px #68b0c1, 0px 15px #68b0c1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogPreviewSection .secondBlogPostWrapper a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 50px;
+}
+.blogPreviewSection .secondBlogPostWrapper h3 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 50px;
+}
+.blogPreviewSection .secondBlogPostWrapper p {
+  margin-right: 50px;
+}
+.blogPreviewSection .secondBlogPostWrapper .blogPreviewImgContainer {
+  position: relative;
+  top: 60px;
+  -webkit-box-shadow: 300px 11px #b9dde7;
+          box-shadow: 300px 11px #b9dde7;
+}
+.blogPreviewSection .secondBlogPostWrapper .blogPreviewImgContainer img {
+  max-width: 100%;
+  -webkit-box-shadow: 20px 20px #b9dde7;
+          box-shadow: 20px 20px #b9dde7;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .harpersJourney {
   background-color: #f6f6f6;
-  padding: 100px 0;
+  padding: 200px 0 100px;
 }
 .harpersJourney .wrapper {
   display: -webkit-box;
@@ -620,68 +709,6 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
-}
-
-.blogPreviewSection .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 50px;
-}
-.blogPreviewSection .wrapper img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.blogPreviewSection .blogPreviewTextContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50%;
-}
-.blogPreviewSection .blogPreviewImgContainer {
-  width: calc(50% - 50px);
-}
-.blogPreviewSection .firstBlogPostWrapper .blogPreviewTextContainer {
-  padding-left: 50px;
-}
-.blogPreviewSection .firstBlogPostWrapper a {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-.blogPreviewSection .firstBlogPostWrapper h3 {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-.blogPreviewSection .secondBlogPostWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.blogPreviewSection .secondBlogPostWrapper .blogPreviewTextContainer {
-  padding-right: 50px;
-}
-.blogPreviewSection .secondBlogPostWrapper a {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-.blogPreviewSection .secondBlogPostWrapper h3 {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 footer {
