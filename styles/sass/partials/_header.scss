@@ -48,3 +48,15 @@ header {
 	top: -63px;
 	left: 40px;
 }
+
+.blogHeaderImage::after {
+	content: "BLOG";
+	color: $black;
+	font-family: $headingFont;
+	line-height: 92px;
+	letter-spacing: 1px;
+	font-size: 4rem;
+	position: relative;
+	top: -60px;
+	left: 100px;
+}

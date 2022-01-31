@@ -65,15 +65,42 @@
 		<!-- main begins  -->
 		<main>
 			<!-- BLOG section begins -->
-			<section id="blog">
+			<section id="blog" class="blog">
 				<div class="wrapper">
 					<aside class="blogAside">
-						<!--  -->
-						<!--  -->
-						<!-- add more here later  -->
-						<!--  -->
-						<!--  -->
+						<div class="firstAsideSection">
+							<div class="asideImgContainer">
+								<img
+									src="./assets/blog-image-2.jpg"
+									alt="Harper laying down on the floor next to a teal wall"
+								/>
+							</div>
+							<div class="asideTextContainer">
+								<h4>ABOUT HARPER</h4>
+								<p>
+									Lorem ipsum dolor sit,
+									amet consectetur
+									adipisicing elit. Quam,
+									molestias.
+								</p>
+							</div>
+						</div>
+						<div class="secondAsideSection">
+							<h4>RECENT POSTS</h4>
+							<ul>
+								<li>Lorem ipsum dolor sit.</li>
+								<li>
+									Amet consectetur
+									adipisicing.
+								</li>
+								<li>Repellat, numquam?</li>
+								<li>Ipsum dolor</li>
+							</ul>
+						</div>
 					</aside>
+					<!-- Aside ends  -->
+
+					<!-- Blog content begins  -->
 					<div class="blogContent">
 						<div class="blogPost">
 							<h2>
@@ -185,52 +212,60 @@
 							</div>
 						</div>
 						<!-- blogComment 2 ends here  -->
+
+						<div class="commentsForm">
+							<form
+								action=""
+								class="commentsForm"
+								name="commentsForm"
+							>
+								<legend>Contact Harper</legend>
+								<label
+									for="name"
+									class="sr-only"
+									>Enter Your Name</label
+								>
+								<input
+									type="text"
+									name="name"
+									id="name"
+									placeholder="Name"
+								/>
+
+								<label
+									for="email"
+									class="sr-only"
+									>Enter Your Email</label
+								>
+								<input
+									type="text"
+									name="email"
+									id="email"
+									placeholder="Email address"
+								/>
+								<label
+									for="comments"
+									class="sr-only"
+									>Enter Your
+									Comments</label
+								>
+								<textarea
+									name="comments"
+									id="comments"
+									cols="30"
+									rows="10"
+								></textarea>
+								<button
+									class="submitButton"
+									type="submit"
+								>
+									POST COMMENT
+								</button>
+							</form>
+						</div>
+						<!-- commentsForm ends  -->
 					</div>
 					<!-- blogContent ends here  -->
-					<div class="commentsForm">
-						<form
-							action=""
-							class="commentsForm"
-							name="commentsForm"
-						>
-							<legend>Contact Harper</legend>
-							<label for="name" class="sr-only"
-								>Enter Your Name</label
-							>
-							<input
-								type="text"
-								name="name"
-								id="name"
-								placeholder="Name"
-							/>
-
-							<label for="email" class="sr-only"
-								>Enter Your Email</label
-							>
-							<input
-								type="text"
-								name="email"
-								id="email"
-								placeholder="Email address"
-							/>
-							<label for="comments" class="sr-only"
-								>Enter Your Comments</label
-							>
-							<textarea
-								name="comments"
-								id="comments"
-								cols="30"
-								rows="10"
-							></textarea>
-							<button
-								class="submitButton"
-								type="submit"
-							>
-								POST COMMENT
-							</button>
-						</form>
-					</div>
-					<!-- commentsForm ends  -->
 				</div>
 				<!-- wrapper ends -->
 			</section>

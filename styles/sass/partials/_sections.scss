@@ -248,3 +248,63 @@
 		}
 	}
 }
+
+/* Blog page styling goes here */
+
+.blog {
+	background-color: $white;
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.blogAside {
+	width: calc(35% - 60px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 60px;
+	.asideImgContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		img {
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+	.firstAsideSection,
+	.secondAsideSection {
+		background-color: $pureWhite;
+		padding: 25px;
+		width: 100%;
+	}
+	.firstAsideSection {
+		h3 {
+			padding-top: 30px;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.secondAsideSection {
+		margin-top: 20px;
+		ul {
+			padding-left: 20px;
+			list-style: inside;
+		}
+	}
+}
+
+.blogContent {
+	width: 65%;
+}
+
+.blogPost {
+	background-color: $pureWhite;
+	padding: 30px;
+	h2 {
+		margin: 20px 0px 30px;
+	}
+}

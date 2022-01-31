@@ -436,6 +436,13 @@ form legend {
   border: transparent;
 }
 
+h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  color: #171717;
+  letter-spacing: 1px;
+}
+
 header {
   background-color: #b9dde7;
 }
@@ -491,6 +498,18 @@ header {
   position: relative;
   top: -63px;
   left: 40px;
+}
+
+.blogHeaderImage::after {
+  content: "BLOG";
+  color: #171717;
+  font-family: "Oswald", sans-serif;
+  line-height: 92px;
+  letter-spacing: 1px;
+  font-size: 4rem;
+  position: relative;
+  top: -60px;
+  left: 100px;
 }
 
 .pageNav {
@@ -859,6 +878,83 @@ header {
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
   cursor: pointer;
+}
+
+/* Blog page styling goes here */
+.blog {
+  background-color: #f6f6f6;
+}
+.blog .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.blogAside {
+  width: calc(35% - 60px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 60px;
+}
+.blogAside .asideImgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blogAside .asideImgContainer img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.blogAside .firstAsideSection,
+.blogAside .secondAsideSection {
+  background-color: #ffffff;
+  padding: 25px;
+  width: 100%;
+}
+.blogAside .firstAsideSection h3 {
+  padding-top: 30px;
+}
+.blogAside .firstAsideSection p {
+  margin-bottom: 0;
+}
+.blogAside .secondAsideSection {
+  margin-top: 20px;
+}
+.blogAside .secondAsideSection ul {
+  padding-left: 20px;
+  list-style: inside;
+}
+
+.blogContent {
+  width: 65%;
+}
+
+.blogPost {
+  background-color: #ffffff;
+  padding: 30px;
+}
+.blogPost h2 {
+  margin: 20px 0px 30px;
 }
 
 footer {
