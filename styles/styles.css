@@ -864,7 +864,7 @@ header {
   padding: 15px;
   resize: none;
   border: transparent;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding-top: 30px;
 }
 .formContainer form button {
@@ -872,6 +872,7 @@ header {
   opacity: 1;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  width: 100%;
 }
 .formContainer form button:hover, .formContainer form button:focus {
   opacity: 0.5;
@@ -952,14 +953,13 @@ header {
   background-color: #ffffff;
   padding: 30px;
   padding-bottom: 60px;
-  margin-bottom: 30px;
   border-bottom: 5px solid #227284;
 }
 .blogContent .blogPost h2 {
   margin: 20px 0px 30px;
 }
 .blogContent .blogComment {
-  padding: 30px;
+  padding: 10px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -968,6 +968,43 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #ffffff;
+  margin-top: 30px;
+}
+.blogContent .blogComment .blogCommentImgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blogContent .blogComment p {
+  margin: 0px;
+}
+.blogContent .blogComment .dateText {
+  padding-top: 15px;
+}
+.blogContent .blogComment .commentText {
+  padding-bottom: 20px;
+}
+.blogContent .blogCommentTextContainer {
+  padding: 0px 20px 0px 20px;
+}
+.blogContent .commentSection {
+  border-bottom: 5px solid #227284;
+  margin: 50px 0px 50px;
+}
+
+.commentsForm {
+  width: 100%;
+  margin-left: 0;
+}
+.commentsForm input[type=email] {
+  margin-left: 15px;
 }
 
 footer {

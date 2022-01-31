@@ -214,11 +214,11 @@
 								<div
 									class="blogCommentTextContainer"
 								>
-									<p>
+									<p class="dateText">
 										Tuesday, October
 										9th, 2018 by Maggie
 									</p>
-									<p>
+									<p class="commentText">
 										Lorem ipsum dolor
 										sit amet consectetur
 										adipisicing elit.
@@ -245,11 +245,11 @@
 								<div
 									class="blogCommentTextContainer"
 								>
-									<p>
+									<p class="dateText">
 										Wednesday, October
 										10th, 2018 by Daisy
 									</p>
-									<p>
+									<p class="commentText">
 										Lorem ipsum dolor
 										sit amet consectetur
 										adipisicing elit.
@@ -267,7 +267,7 @@
 						</div>
 
 						<!-- Comments form begins here  -->
-						<div class="commentsForm">
+						<div class="commentsForm formContainer">
 							<form
 								action=""
 								class="commentsForm"
@@ -284,18 +284,19 @@
 									name="name"
 									id="name"
 									placeholder="Name"
+									class="formTextInput"
 								/>
-
 								<label
 									for="email"
 									class="sr-only"
 									>Enter Your Email</label
 								>
 								<input
-									type="text"
+									type="email"
 									name="email"
 									id="email"
 									placeholder="Email address"
+									class="formTextInput"
 								/>
 								<label
 									for="comments"
@@ -308,6 +309,7 @@
 									id="comments"
 									cols="30"
 									rows="10"
+									placeholder="Comment"
 								></textarea>
 								<button
 									class="submitButton"

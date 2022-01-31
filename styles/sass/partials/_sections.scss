@@ -232,13 +232,14 @@
 			padding: 15px;
 			resize: none;
 			border: transparent;
-			margin-bottom: 30px;
+			margin-bottom: 25px;
 			padding-top: 30px;
 		}
 		button {
 			margin-bottom: 100px;
 			opacity: 1;
 			transition: opacity 0.5s;
+			width: 100%;
 			&:hover,
 			&:focus {
 				opacity: 0.5;
@@ -303,7 +304,6 @@
 		background-color: $pureWhite;
 		padding: 30px;
 		padding-bottom: 60px;
-		margin-bottom: 30px;
 		border-bottom: 5px solid $tertiary;
 		h2 {
 			margin: 20px 0px 30px;
@@ -311,9 +311,41 @@
 	}
 
 	.blogComment {
-		padding: 30px;
+		padding: 10px 30px;
 		display: flex;
 		flex-direction: row;
 		background-color: $pureWhite;
+		margin-top: 30px;
+		.blogCommentImgContainer {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		p {
+			margin: 0px;
+		}
+		.dateText {
+			padding-top: 15px;
+		}
+		.commentText {
+			padding-bottom: 20px;
+		}
+	}
+
+	.blogCommentTextContainer {
+		padding: 0px 20px 0px 20px;
+	}
+
+	.commentSection {
+		border-bottom: 5px solid $tertiary;
+		margin: 50px 0px 50px;
+	}
+}
+
+.commentsForm {
+	width: 100%;
+	margin-left: 0;
+	input[type="email"] {
+		margin-left: 15px;
 	}
 }
