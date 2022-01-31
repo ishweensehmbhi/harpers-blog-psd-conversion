@@ -33,7 +33,7 @@ header {
 	background-color: $white;
 	img {
 		width: 100%;
-		height: 100%;
+		height: auto;
 	}
 }
 
@@ -60,3 +60,5 @@ header {
 	top: -60px;
 	left: 100px;
 }
+
+// Originally, for desktop - keep menu hidden until user VW is at a respectable level

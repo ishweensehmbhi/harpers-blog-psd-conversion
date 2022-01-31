@@ -1,0 +1,62 @@
+/* CONTACT PAGE STYLING */
+@media (max-width: 1440px) {
+	.formContainer form input[type="text"],
+	.formContainer form input[type="email"] {
+		width: 100%;
+	}
+	.formContainer form input[type="email"] {
+		margin-left: 0px;
+	}
+}
+
+@media (max-width: 870px) {
+	.contact .wrapper {
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		.addressAndSocialsAside {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 30px;
+			border-bottom: 3px solid $primary;
+			border-radius: 10px;
+		}
+		.formContainer {
+			width: 100%;
+			margin-left: 0px;
+		}
+		.socialsBar {
+			font-size: 2rem;
+			padding-bottom: 20px;
+		}
+		.submitButton {
+			margin-bottom: 30px;
+		}
+	}
+	.contactHeaderImage::after {
+		font-size: 3rem;
+		line-height: 60px;
+		top: -40px;
+	}
+	.formContainer form input[type="text"],
+	.formContainer form input[type="email"],
+	textarea {
+		border-radius: 10px;
+	}
+}
+
+/* Universal styling */
+
+@media (max-width: 800px) {
+	.pageNav .navLogo {
+		display: none;
+	}
+}
+
+@media (max-width: 400px) {
+	// show mini baby navbar
+}

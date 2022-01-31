@@ -199,10 +199,12 @@
 /* contact page styling */
 .contact {
 	background-color: $white;
-	height: 50vh;
 	.wrapper {
 		display: flex;
 		flex-direction: row;
+	}
+	.contactHeaderImg {
+		height: 25vh;
 	}
 }
 
