@@ -8,14 +8,13 @@
 		padding: 0px 25px;
 		a {
 			color: $black;
-			transition: color 0.5s;
+			transition: color 0.25s;
 			&:focus,
-			&:hover {
+			&:hover,
+			&:active {
 				color: $white;
-				transition: color 0.5s;
-			}
-			&:focus {
-				border: 1px dashed $white;
+				transition: color 0.25s;
+				filter: drop-shadow(1px 1px 1px $black);
 			}
 		}
 	}

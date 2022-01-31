@@ -357,11 +357,26 @@ h2 {
   opacity: 1;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  -webkit-transition: -webkit-box-shadow 0.25s;
+  transition: -webkit-box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
 }
-.smallButton:hover, .smallButton:focus {
+.smallButton:hover, .smallButton:focus, .smallButton:active {
   opacity: 0.75;
+  color: #f6f6f6;
+  -webkit-box-shadow: 0px 0px 5px 2px #f38d8d;
+          box-shadow: 0px 0px 5px 2px #f38d8d;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  -webkit-transition: -webkit-box-shadow 0.25s;
+  transition: -webkit-box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
 }
 
 h3 {
@@ -373,15 +388,21 @@ h3 {
   padding-top: 7px;
 }
 
-.linksSection .itemCardContent a {
-  opacity: 1;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+.linksSection .itemCardContent h3 {
+  color: #171717;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
 }
-.linksSection .itemCardContent a:hover, .linksSection .itemCardContent a:focus {
-  opacity: 0.5;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+.linksSection .itemCardContent h3:hover, .linksSection .itemCardContent h3:focus, .linksSection .itemCardContent h3:active {
+  color: #227284;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+  -webkit-transition: -webkit-filter 0.5s;
+  transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
+  -webkit-filter: drop-shadow(1px 1px 5px #b9dde7);
+          filter: drop-shadow(1px 1px 5px #b9dde7);
 }
 
 .harpersJourney .smallButton {
@@ -531,16 +552,15 @@ header {
 }
 .pageNav li a {
   color: #171717;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
 }
-.pageNav li a:focus, .pageNav li a:hover {
+.pageNav li a:focus, .pageNav li a:hover, .pageNav li a:active {
   color: #f6f6f6;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-}
-.pageNav li a:focus {
-  border: 1px dashed #f6f6f6;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+  -webkit-filter: drop-shadow(1px 1px 1px #171717);
+          filter: drop-shadow(1px 1px 1px #171717);
 }
 
 .aboutSection {
@@ -787,6 +807,21 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  -webkit-transition: border-radius 0.25s;
+  transition: border-radius 0.25s;
+}
+.imgGallery .imgGalleryItem img:hover, .imgGallery .imgGalleryItem img:focus, .imgGallery .imgGalleryItem img:active {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  -webkit-transition: border-radius 0.25s;
+  transition: border-radius 0.25s;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(1px 1px 2px #171717);
+          filter: drop-shadow(1px 1px 2px #171717);
+  border-radius: 5%;
 }
 
 /* contact page styling */
@@ -821,10 +856,12 @@ header {
   transition: color 0.3s;
   color: #227284;
 }
-.socialsBar a:hover, .socialsBar a:focus {
+.socialsBar a:hover, .socialsBar a:focus, .socialsBar a:active {
   color: #f38d8d;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
+  -webkit-filter: drop-shadow(1px 1px 1px #f38d8d);
+          filter: drop-shadow(1px 1px 1px #f38d8d);
 }
 
 .addressAndSocialsAside {
@@ -838,7 +875,7 @@ header {
   -webkit-transition: color 0.25s;
   transition: color 0.25s;
 }
-.addressAndSocialsAside .telephoneNumber:hover, .addressAndSocialsAside .telephoneNumber:focus {
+.addressAndSocialsAside .telephoneNumber:hover, .addressAndSocialsAside .telephoneNumber:focus, .addressAndSocialsAside .telephoneNumber:active {
   color: #f38d8d;
   -webkit-transition: color 0.25s;
   transition: color 0.25s;
@@ -848,7 +885,7 @@ header {
   -webkit-transition: color 0.25s;
   transition: color 0.25s;
 }
-.addressAndSocialsAside .emailAddress:hover, .addressAndSocialsAside .emailAddress:focus {
+.addressAndSocialsAside .emailAddress:hover, .addressAndSocialsAside .emailAddress:focus, .addressAndSocialsAside .emailAddress:active {
   color: #f38d8d;
   -webkit-transition: color 0.25s;
   transition: color 0.25s;
@@ -890,29 +927,21 @@ header {
 .formContainer form button {
   margin-bottom: 100px;
   opacity: 1;
-  -webkit-transition: opacity 0.25s;
-  transition: opacity 0.25s;
-  -webkit-transition: -webkit-box-shadow 0.25s;
-  transition: -webkit-box-shadow 0.25s;
-  transition: box-shadow 0.25s;
-  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
+  -webkit-transition: opacity 0.25s, color 0.25s, -webkit-box-shadow 0.25s;
+  transition: opacity 0.25s, color 0.25s, -webkit-box-shadow 0.25s;
+  transition: opacity 0.25s, box-shadow 0.25s, color 0.25s;
+  transition: opacity 0.25s, box-shadow 0.25s, color 0.25s, -webkit-box-shadow 0.25s;
   width: 100%;
 }
-.formContainer form button:hover, .formContainer form button:focus {
+.formContainer form button:hover, .formContainer form button:focus, .formContainer form button:active {
   opacity: 0.9;
   -webkit-box-shadow: 0px 0px 5px 2px #f38d8d;
           box-shadow: 0px 0px 5px 2px #f38d8d;
   color: #f6f6f6;
-  -webkit-transition: opacity 0.25s;
-  transition: opacity 0.25s;
-  -webkit-transition: -webkit-box-shadow 0.25s;
-  transition: -webkit-box-shadow 0.25s;
-  transition: box-shadow 0.25s;
-  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
+  -webkit-transition: opacity 0.25s, color 0.25s, -webkit-box-shadow 0.25s;
+  transition: opacity 0.25s, color 0.25s, -webkit-box-shadow 0.25s;
+  transition: opacity 0.25s, box-shadow 0.25s, color 0.25s;
+  transition: opacity 0.25s, box-shadow 0.25s, color 0.25s, -webkit-box-shadow 0.25s;
   cursor: pointer;
 }
 
@@ -973,12 +1002,36 @@ header {
 .blogAside .firstAsideSection p {
   margin-bottom: 0;
 }
+.blogAside .firstAsideSection a {
+  color: black;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+.blogAside .firstAsideSection a:hover, .blogAside .firstAsideSection a:focus, .blogAside .firstAsideSection a:active {
+  color: #227284;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+  text-decoration: underline;
+  font-weight: bold;
+}
 .blogAside .secondAsideSection {
   margin-top: 20px;
 }
 .blogAside .secondAsideSection ul {
   padding-left: 20px;
   list-style: inside;
+}
+.blogAside .secondAsideSection a {
+  color: black;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+.blogAside .secondAsideSection a:hover, .blogAside .secondAsideSection a:focus, .blogAside .secondAsideSection a:active {
+  color: #227284;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .blogContent {
