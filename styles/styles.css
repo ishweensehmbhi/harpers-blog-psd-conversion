@@ -802,26 +802,31 @@ header {
 .imgGallery .imgGalleryItem {
   padding: 15px;
   width: calc(100% / 3 - 15px);
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
 }
 .imgGallery .imgGalleryItem img {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
-  -webkit-transition: opacity 0.25s;
-  transition: opacity 0.25s;
-  -webkit-transition: border-radius 0.25s;
-  transition: border-radius 0.25s;
 }
-.imgGallery .imgGalleryItem img:hover, .imgGallery .imgGalleryItem img:focus, .imgGallery .imgGalleryItem img:active {
+.imgGallery .imgGalleryItem a:hover,
+.imgGallery .imgGalleryItem a:focus,
+.imgGallery .imgGalleryItem a:active {
   opacity: 0.8;
   -webkit-transition: opacity 0.25s;
   transition: opacity 0.25s;
-  -webkit-transition: border-radius 0.25s;
-  transition: border-radius 0.25s;
   cursor: pointer;
   -webkit-filter: drop-shadow(1px 1px 2px #171717);
           filter: drop-shadow(1px 1px 2px #171717);
-  border-radius: 5%;
+  border: transparent;
+}
+.imgGallery .imgGalleryItem a:hover img,
+.imgGallery .imgGalleryItem a:focus img,
+.imgGallery .imgGalleryItem a:active img {
+  border-radius: 10%;
+  -webkit-transition: border-radius 0.25s;
+  transition: border-radius 0.25s;
 }
 
 /* contact page styling */
