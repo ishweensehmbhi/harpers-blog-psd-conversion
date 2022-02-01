@@ -1199,11 +1199,12 @@ textarea {
   }
   .blog .wrapper .blogAside {
     width: 100%;
+    margin-bottom: 50px;
   }
   .blog .wrapper .firstAsideSection,
 .blog .wrapper .secondAsideSection {
-    border-radius: 25px;
-    border: 2px solid #f38d8d;
+    border-radius: 10px;
+    border: 3px solid #b9dde7;
   }
   .blog .wrapper .asideImgContainer {
     display: -webkit-box;
@@ -1219,6 +1220,8 @@ textarea {
   }
   .blog .wrapper .asideImgContainer img {
     width: 30%;
+    -webkit-box-shadow: 5px 5px 15px 1px #171717;
+            box-shadow: 5px 5px 15px 1px #171717;
   }
   .blog .wrapper .asideTextContainer,
 .blog .wrapper .secondAsideSection {
@@ -1235,10 +1238,24 @@ textarea {
   }
   .blog .wrapper .asideTextContainer h4,
 .blog .wrapper .secondAsideSection h4 {
-    margin-top: 0px;
+    margin: 25px 0px 25px;
+    font-size: 1.8rem;
+  }
+  .blog .wrapper .asideTextContainer p,
+.blog .wrapper .secondAsideSection p {
+    margin: 0;
+    text-align: center;
+  }
+  .blog .wrapper .asideTextContainer a,
+.blog .wrapper .secondAsideSection a {
+    text-decoration: underline;
   }
   .blog .wrapper .secondAsideSection {
     margin-bottom: 30px;
+    text-align: center;
+  }
+  .blog .wrapper .secondAsideSection ul {
+    list-style: none;
   }
   .blog .wrapper .blogContent {
     border-top: 3px solid #68b0c1;
@@ -1248,7 +1265,7 @@ textarea {
     margin-bottom: 60px;
   }
   .blog .wrapper .blogComment {
-    border-radius: 15px;
+    border-radius: 10px;
   }
   .blog .wrapper .dateText {
     font-weight: bold;

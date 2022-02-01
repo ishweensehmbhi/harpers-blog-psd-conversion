@@ -46,7 +46,6 @@
 	textarea {
 		border-radius: 10px;
 	}
-	// maybe change where the ::after elements for each page appear
 
 	/* BLOG SECTION VERTICAL VIEW */
 
@@ -55,16 +54,16 @@
 		.blogAside {
 			order: 1;
 		}
-
 		flex-direction: column;
 		flex-wrap: wrap;
 		.blogAside {
 			width: 100%;
+			margin-bottom: 50px;
 		}
 		.firstAsideSection,
 		.secondAsideSection {
-			border-radius: 25px;
-			border: 2px solid $secondary;
+			border-radius: 10px;
+			border: 3px solid $quaternary;
 		}
 		.asideImgContainer {
 			display: flex;
@@ -72,6 +71,7 @@
 			justify-content: center;
 			img {
 				width: 30%;
+				box-shadow: 5px 5px 15px 1px $black;
 			}
 		}
 		.asideTextContainer,
@@ -80,13 +80,24 @@
 			flex-direction: column;
 			align-items: center;
 			h4 {
-				margin-top: 0px;
+				margin: 25px 0px 25px;
+				font-size: 1.8rem;
+			}
+			p {
+				margin: 0;
+				text-align: center;
+			}
+			a {
+				text-decoration: underline;
 			}
 		}
 		.secondAsideSection {
 			margin-bottom: 30px;
+			text-align: center;
+			ul {
+				list-style: none;
+			}
 		}
-
 		.blogContent {
 			border-top: 3px solid $primary;
 			width: 100%;
@@ -94,9 +105,8 @@
 				margin-bottom: 60px;
 			}
 		}
-
 		.blogComment {
-			border-radius: 15px;
+			border-radius: 10px;
 		}
 		.dateText {
 			font-weight: bold;
