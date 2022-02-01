@@ -9,13 +9,12 @@
 	}
 }
 
-@media (max-width: 870px) {
+@media (max-width: 1000px) {
 	.contact .wrapper {
 		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		height: auto;
 		.addressAndSocialsAside {
 			width: 100%;
 			display: flex;
@@ -47,13 +46,74 @@
 	textarea {
 		border-radius: 10px;
 	}
+	// maybe change where the ::after elements for each page appear
+
+	/* BLOG SECTION VERTICAL VIEW */
+
+	.blog .wrapper {
+		// Push Harper's info to the bottom
+		.blogAside {
+			order: 1;
+		}
+
+		flex-direction: column;
+		flex-wrap: wrap;
+		.blogAside {
+			width: 100%;
+		}
+		.firstAsideSection,
+		.secondAsideSection {
+			border-radius: 25px;
+			border: 2px solid $secondary;
+		}
+		.asideImgContainer {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			img {
+				width: 30%;
+			}
+		}
+		.asideTextContainer,
+		.secondAsideSection {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			h4 {
+				margin-top: 0px;
+			}
+		}
+		.secondAsideSection {
+			margin-bottom: 30px;
+		}
+
+		.blogContent {
+			border-top: 3px solid $primary;
+			width: 100%;
+			button {
+				margin-bottom: 60px;
+			}
+		}
+
+		.blogComment {
+			border-radius: 15px;
+		}
+		.dateText {
+			font-weight: bold;
+			padding-bottom: 2px;
+			border-bottom: 2px solid $white;
+		}
+	}
 }
 
 /* Universal styling */
 
 @media (max-width: 800px) {
-	.pageNav .navLogo {
+	.pageNav {
 		display: none;
+	}
+	.slideOutNav {
+		display: block;
 	}
 }
 

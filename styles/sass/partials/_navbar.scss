@@ -4,6 +4,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	z-index: 10;
 	li {
 		padding: 0px 25px;
 		a {
@@ -19,3 +20,52 @@
 		}
 	}
 }
+
+// Originally, for desktop - keep menu hidden until user VW is at a respectable level
+
+// Code for slide out nav inspired by codealong in class.
+// .slideOutNav {
+// 	background-color: $pureWhite;
+// 	opacity: 90%;
+// 	display: flex;
+// 	flex-direction: column;
+// 	padding: 35px 50px;
+// 	height: 100vh;
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	z-index: 20;
+// 	transition: 0.75s;
+// 	input[type="checkbox"] {
+// 		opacity: 0;
+// 		position: absolute;
+// 		&:checked ~ .slideOutNavList {
+// 			left: 0;
+// 		}
+// 		&:not(:checked) ~ .slideOutNavList {
+// 			z-index: -90;
+// 		}
+// 		&:focus + label {
+// 			border: 1px dotted $primary;
+// 		}
+// 	}
+// 	label {
+// 		cursor: pointer;
+// 		background-color: $pureWhite;
+// 	}
+// 	.pageNavItem {
+// 		height: 50px;
+// 		margin-top: 30px;
+// 		a {
+// 			color: $black;
+// 			font-size: 2rem;
+// 			margin-top: 30px;
+// 			font-family: $headingFont;
+// 			&:hover,
+// 			&:focus,
+// 			&:active {
+// 				color: $secondary;
+// 			}
+// 		}
+// 	}
+// }
