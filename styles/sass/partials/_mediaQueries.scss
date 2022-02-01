@@ -58,6 +58,7 @@
 			margin-bottom: 30px;
 			border-bottom: 3px solid $primary;
 			border-radius: 10px;
+			text-align: center;
 		}
 		.formContainer {
 			width: 100%;
@@ -283,6 +284,10 @@
 			}
 		}
 	}
+	.blogHeaderImage::after {
+		content: "HARPER'S BLOG";
+		left: 5%;
+	}
 }
 
 /* Universal styling across all pages - show navbar when viewport width is small enough */
@@ -317,5 +322,20 @@
 				right: -73px;
 			}
 		}
+	}
+	.contactHeaderImage::after {
+		font-size: 1.4rem;
+		left: 15px;
+	}
+	.blogHeaderImage::after {
+		content: "HARPER'S BLOG";
+		font-size: 1.3rem;
+		left: 10%;
+	}
+	.blogCommentImgContainer img {
+		display: none;
+	}
+	.asideTextContainer h4 {
+		text-align: center;
 	}
 }

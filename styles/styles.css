@@ -553,7 +553,7 @@ header {
   display: none;
   position: fixed;
   top: 50px;
-  left: 50px;
+  right: 50px;
   z-index: 30;
 }
 .mobileNav li {
@@ -603,6 +603,7 @@ header {
   height: auto;
   -webkit-transition: height 0.5s ease-in-out;
   transition: height 0.5s ease-in-out;
+  right: 0px;
 }
 
 .aboutSection {
@@ -1239,6 +1240,7 @@ footer {
     margin-bottom: 30px;
     border-bottom: 3px solid #68b0c1;
     border-radius: 10px;
+    text-align: center;
   }
   .contact .wrapper .formContainer {
     width: 100%;
@@ -1547,6 +1549,11 @@ textarea {
   .harpersJourney .wrapper .harpersJourneyTextContainer h2 {
     line-height: 42px;
   }
+
+  .blogHeaderImage::after {
+    content: "HARPER'S BLOG";
+    left: 5%;
+  }
 }
 /* Universal styling across all pages - show navbar when viewport width is small enough */
 @media (max-width: 820px) {
@@ -1583,5 +1590,24 @@ textarea {
             transform: scale(40%);
     top: -86px;
     right: -73px;
+  }
+
+  .contactHeaderImage::after {
+    font-size: 1.4rem;
+    left: 15px;
+  }
+
+  .blogHeaderImage::after {
+    content: "HARPER'S BLOG";
+    font-size: 1.3rem;
+    left: 10%;
+  }
+
+  .blogCommentImgContainer img {
+    display: none;
+  }
+
+  .asideTextContainer h4 {
+    text-align: center;
   }
 }
