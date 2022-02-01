@@ -205,10 +205,21 @@
 	.linksSection .wrapper {
 		.itemCard {
 			width: 100%;
+			flex-direction: column;
+			.itemCardIcon {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 10px;
+			}
+			.itemCardContent {
+				padding: 0px 0px 50px 0px;
+				text-align: center;
+			}
 		}
 	}
 
 	.blogPreviewSection {
+		padding: 70px 0;
 		.firstBlogPostWrapper,
 		.secondBlogPostWrapper {
 			flex-direction: column;
@@ -216,8 +227,7 @@
 			.blogPreviewImgContainer {
 				width: 60%;
 				top: 0px;
-				margin-bottom: 50px;
-				margin-top: 50px;
+				margin: 50px 0 50px;
 			}
 			.blogPreviewTextContainer {
 				width: 100%;
@@ -273,13 +283,6 @@
 			}
 		}
 	}
-
-	.imgGallery {
-		flex-direction: column;
-		.imgGalleryItem {
-			width: 100%;
-		}
-	}
 }
 
 /* Universal styling */
@@ -290,6 +293,15 @@
 	}
 	.slideOutNav {
 		display: block;
+	}
+
+	.imgGallery {
+		flex-direction: column;
+		.imgGalleryItem {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
 	}
 }
 
