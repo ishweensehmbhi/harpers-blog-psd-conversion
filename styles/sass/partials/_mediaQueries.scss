@@ -46,7 +46,7 @@
 /* home header changes */
 @media (max-width: 1000px) {
 	p {
-		font-size: 0.8rem;
+		font-size: 1rem;
 	}
 
 	.contact .wrapper {
@@ -263,6 +263,7 @@
 			}
 			.harpersJourneyTextContainer {
 				margin-left: 0;
+				width: 100%;
 				h2,
 				p,
 				a {
@@ -275,6 +276,13 @@
 					line-height: 42px;
 				}
 			}
+		}
+	}
+
+	.imgGallery {
+		flex-direction: column;
+		.imgGalleryItem {
+			width: 100%;
 		}
 	}
 }

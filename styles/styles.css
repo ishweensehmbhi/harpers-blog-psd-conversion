@@ -1157,7 +1157,7 @@ footer {
 /* home header changes */
 @media (max-width: 1000px) {
   p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .contact .wrapper {
@@ -1465,6 +1465,7 @@ textarea {
   }
   .harpersJourney .wrapper .harpersJourneyTextContainer {
     margin-left: 0;
+    width: 100%;
   }
   .harpersJourney .wrapper .harpersJourneyTextContainer h2,
 .harpersJourney .wrapper .harpersJourneyTextContainer p,
@@ -1476,6 +1477,16 @@ textarea {
   }
   .harpersJourney .wrapper .harpersJourneyTextContainer h2 {
     line-height: 42px;
+  }
+
+  .imgGallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imgGallery .imgGalleryItem {
+    width: 100%;
   }
 }
 /* Universal styling */
