@@ -182,18 +182,17 @@
 			object-fit: cover;
 			max-width: 100%;
 		}
-		transition: opacity 0.25s;
+		transition: border-radius 0.25s, opacity 0.25s;
 		a:hover,
 		a:focus,
 		a:active {
 			opacity: 0.8;
-			transition: opacity 0.25s;
 			cursor: pointer;
 			filter: drop-shadow(1px 1px 2px $black);
 			border: transparent;
 			img {
-				border-radius: 10%;
-				transition: border-radius 0.25s;
+				border-radius: 5%;
+				transition: border-radius 0.25s, opacity 0.25s;
 			}
 		}
 	}

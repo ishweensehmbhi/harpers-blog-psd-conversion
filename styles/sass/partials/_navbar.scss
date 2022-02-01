@@ -20,3 +20,56 @@
 		}
 	}
 }
+
+.mobileNav {
+	display: none;
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	z-index: 30;
+	li {
+		position: relative;
+	}
+	.iconItem {
+		padding: 7px 14px;
+		border-radius: 50%;
+		transform: scale(200%);
+		background-color: rgba($tertiary, 0.75);
+		filter: drop-shadow(1px 1px 1px $black);
+	}
+	.subMenu {
+		background: rgba($black, 0.5);
+		border-radius: 5%;
+		position: absolute;
+		height: 0;
+		overflow: hidden;
+		li {
+			padding: 5px 0px;
+			a {
+				color: $white;
+				font-style: $headingFont;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.iconContainer {
+		transition: height 0.5s ease-in-out;
+		color: $white;
+		li:hover,
+		li:focus-within {
+			cursor: pointer;
+			color: $quaternary;
+			transition: color 0.25s;
+		}
+
+		li:hover .subMenu,
+		li:focus-within .subMenu {
+			padding: 20px;
+			height: auto;
+			transition: height 0.5s ease-in-out;
+		}
+	}
+}

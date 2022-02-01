@@ -285,13 +285,13 @@
 	}
 }
 
-/* Universal styling */
+/* Universal styling across all pages - show navbar when viewport width is small enough */
 
 @media (max-width: 820px) {
 	.pageNav {
 		display: none;
 	}
-	.slideOutNav {
+	.mobileNav {
 		display: block;
 	}
 

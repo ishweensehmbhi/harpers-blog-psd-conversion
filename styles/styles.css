@@ -549,6 +549,62 @@ header {
           filter: drop-shadow(1px 1px 1px #171717);
 }
 
+.mobileNav {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 30;
+}
+.mobileNav li {
+  position: relative;
+}
+.mobileNav .iconItem {
+  padding: 7px 14px;
+  border-radius: 50%;
+  -webkit-transform: scale(200%);
+          transform: scale(200%);
+  background-color: rgba(34, 114, 132, 0.75);
+  -webkit-filter: drop-shadow(1px 1px 1px #171717);
+          filter: drop-shadow(1px 1px 1px #171717);
+}
+.mobileNav .subMenu {
+  background: rgba(23, 23, 23, 0.5);
+  border-radius: 5%;
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+}
+.mobileNav .subMenu li {
+  padding: 5px 0px;
+}
+.mobileNav .subMenu li a {
+  color: #f6f6f6;
+  font-style: "Oswald", sans-serif;
+}
+.mobileNav .subMenu li a:hover {
+  text-decoration: underline;
+}
+.mobileNav .iconContainer {
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+  color: #f6f6f6;
+}
+.mobileNav .iconContainer li:hover,
+.mobileNav .iconContainer li:focus-within {
+  cursor: pointer;
+  color: #b9dde7;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+.mobileNav .iconContainer li:hover .subMenu,
+.mobileNav .iconContainer li:focus-within .subMenu {
+  padding: 20px;
+  height: auto;
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
+
 .aboutSection {
   background-color: #f6f6f6;
   padding: 125px 0px;
@@ -798,8 +854,8 @@ header {
 .imgGallery .imgGalleryItem {
   padding: 15px;
   width: calc(100% / 3 - 15px);
-  -webkit-transition: opacity 0.25s;
-  transition: opacity 0.25s;
+  -webkit-transition: border-radius 0.25s, opacity 0.25s;
+  transition: border-radius 0.25s, opacity 0.25s;
 }
 .imgGallery .imgGalleryItem img {
   -o-object-fit: cover;
@@ -810,8 +866,6 @@ header {
 .imgGallery .imgGalleryItem a:focus,
 .imgGallery .imgGalleryItem a:active {
   opacity: 0.8;
-  -webkit-transition: opacity 0.25s;
-  transition: opacity 0.25s;
   cursor: pointer;
   -webkit-filter: drop-shadow(1px 1px 2px #171717);
           filter: drop-shadow(1px 1px 2px #171717);
@@ -820,9 +874,9 @@ header {
 .imgGallery .imgGalleryItem a:hover img,
 .imgGallery .imgGalleryItem a:focus img,
 .imgGallery .imgGalleryItem a:active img {
-  border-radius: 10%;
-  -webkit-transition: border-radius 0.25s;
-  transition: border-radius 0.25s;
+  border-radius: 5%;
+  -webkit-transition: border-radius 0.25s, opacity 0.25s;
+  transition: border-radius 0.25s, opacity 0.25s;
 }
 
 /* contact page styling */
@@ -1494,13 +1548,13 @@ textarea {
     line-height: 42px;
   }
 }
-/* Universal styling */
+/* Universal styling across all pages - show navbar when viewport width is small enough */
 @media (max-width: 820px) {
   .pageNav {
     display: none;
   }
 
-  .slideOutNav {
+  .mobileNav {
     display: block;
   }
 
