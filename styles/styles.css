@@ -483,11 +483,8 @@ header {
   -webkit-box-shadow: 20px 20px #ffffff;
           box-shadow: 20px 20px #ffffff;
 }
-.flexContainer .homeLogoContainer {
-  width: calc(65%-7rem);
-}
 .flexContainer .homeLogoContainer h1 {
-  margin: 280px 0px 0px 100px;
+  margin: 280px 0px 0px 150px;
   position: relative;
 }
 .flexContainer .homeLogoContainer h1::after {
@@ -580,6 +577,9 @@ header {
 .aboutSection .wrapper .aboutTextContainer {
   width: 55%;
   margin: 0;
+}
+.aboutSection .harperImageContainer {
+  display: none;
 }
 
 .fullBleedImage {
@@ -1128,6 +1128,40 @@ footer {
     margin-left: 0px;
   }
 }
+/* STYLING FOR HOME PAGE */
+@media (max-width: 1200px) {
+  .home .flexContainer .homeImgContainer {
+    width: 40%;
+  }
+  .home .flexContainer .homeLogoContainer h1 {
+    font-size: 5rem;
+    margin-left: 5rem;
+  }
+  .home .flexContainer .homeLogoContainer h1::after {
+    -webkit-transform: scale(70%);
+            transform: scale(70%);
+    top: -101px;
+    right: -59px;
+  }
+
+  .blogPreviewSection .firstBlogPostWrapper .blogPreviewImgContainer {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .blogPreviewSection .firstBlogPostWrapper .blogPreviewImgContainer img {
+    -webkit-box-shadow: 20px 20px #68b0c1;
+            box-shadow: 20px 20px #68b0c1;
+  }
+  .blogPreviewSection .secondBlogPostWrapper .blogPreviewImgContainer {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .blogPreviewSection .secondBlogPostWrapper .blogPreviewImgContainer img {
+    -webkit-box-shadow: 20px 20px #b9dde7;
+            box-shadow: 20px 20px #b9dde7;
+  }
+}
+/* home header changes */
 @media (max-width: 1000px) {
   .contact .wrapper {
     -webkit-box-orient: vertical;
@@ -1272,14 +1306,81 @@ textarea {
     padding-bottom: 2px;
     border-bottom: 2px solid #f6f6f6;
   }
-}
-/* Universal styling */
-@media (max-width: 800px) {
-  .pageNav {
+
+  .home .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 30rem;
+  }
+  .home .flexContainer .homeLogoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home .flexContainer .homeLogoContainer .pageHeading {
+    margin: 15rem 0 0;
+  }
+
+  .homeImgContainer {
     display: none;
   }
 
-  .slideOutNav {
-    display: block;
+  .aboutSection {
+    padding: 70px 0;
+  }
+  .aboutSection .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutSection .wrapper .aboutTextContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutSection .wrapper .harperImageContainer {
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  .aboutSection .wrapper .harperImageContainer img {
+    width: 100%;
+    -webkit-box-shadow: 5px 5px 15px 1px #171717;
+            box-shadow: 5px 5px 15px 1px #171717;
+  }
+
+  .linksSection .wrapper .itemCard {
+    width: 100%;
   }
 }
+/* Universal styling */

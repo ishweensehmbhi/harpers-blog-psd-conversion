@@ -9,6 +9,41 @@
 	}
 }
 
+/* STYLING FOR HOME PAGE */
+@media (max-width: 1200px) {
+	.home .flexContainer {
+		.homeImgContainer {
+			width: 40%;
+		}
+		.homeLogoContainer {
+			h1 {
+				font-size: 5rem;
+				margin-left: 5rem;
+				&::after {
+					transform: scale(70%);
+					top: -101px;
+					right: -59px;
+				}
+			}
+		}
+	}
+	.blogPreviewSection {
+		.firstBlogPostWrapper .blogPreviewImgContainer {
+			box-shadow: none;
+			img {
+				box-shadow: 20px 20px $primary;
+			}
+		}
+		.secondBlogPostWrapper .blogPreviewImgContainer {
+			box-shadow: none;
+			img {
+				box-shadow: 20px 20px $quaternary;
+			}
+		}
+	}
+}
+
+/* home header changes */
 @media (max-width: 1000px) {
 	.contact .wrapper {
 		flex-direction: column;
@@ -114,18 +149,69 @@
 			border-bottom: 2px solid $white;
 		}
 	}
+
+	.home {
+		.flexContainer {
+			flex-direction: column;
+			align-items: center;
+			height: 30rem;
+			.homeLogoContainer {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				.pageHeading {
+					margin: 15rem 0 0;
+				}
+			}
+		}
+	}
+
+	.homeImgContainer {
+		display: none;
+	}
+
+	.aboutSection {
+		padding: 70px 0;
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.aboutTextContainer {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				align-items: center;
+			}
+			.harperImageContainer {
+				width: 50%;
+				display: inline-block;
+				margin-bottom: 40px;
+				img {
+					width: 100%;
+					box-shadow: 5px 5px 15px 1px $black;
+				}
+			}
+		}
+	}
+
+	.linksSection .wrapper {
+		.itemCard {
+			width: 100%;
+		}
+	}
 }
 
 /* Universal styling */
 
-@media (max-width: 800px) {
-	.pageNav {
-		display: none;
-	}
-	.slideOutNav {
-		display: block;
-	}
-}
+// @media (max-width: 820px) {
+// 	.pageNav {
+// 		display: none;
+// 	}
+// 	.slideOutNav {
+// 		display: block;
+// 	}
+// }
 
 @media (max-width: 400px) {
 	// show mini baby navbar
