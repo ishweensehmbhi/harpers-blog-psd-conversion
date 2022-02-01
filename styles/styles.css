@@ -591,14 +591,16 @@ header {
   color: #f6f6f6;
 }
 .mobileNav .iconContainer li:hover,
-.mobileNav .iconContainer li:focus-within {
+.mobileNav .iconContainer li:focus-within,
+.mobileNav .iconContainer li:active .subMenu {
   cursor: pointer;
   color: #b9dde7;
   -webkit-transition: color 0.25s;
   transition: color 0.25s;
 }
 .mobileNav .iconContainer li:hover .subMenu,
-.mobileNav .iconContainer li:focus-within .subMenu {
+.mobileNav .iconContainer li:focus-within .subMenu,
+.mobileNav .iconContainer li:active .subMenu {
   padding: 20px;
   height: auto;
   -webkit-transition: height 0.5s ease-in-out;

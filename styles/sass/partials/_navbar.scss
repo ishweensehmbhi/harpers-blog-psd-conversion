@@ -59,14 +59,16 @@
 		transition: height 0.5s ease-in-out;
 		color: $white;
 		li:hover,
-		li:focus-within {
+		li:focus-within,
+		li:active .subMenu {
 			cursor: pointer;
 			color: $quaternary;
 			transition: color 0.25s;
 		}
 
 		li:hover .subMenu,
-		li:focus-within .subMenu {
+		li:focus-within .subMenu,
+		li:active .subMenu {
 			padding: 20px;
 			height: auto;
 			transition: height 0.5s ease-in-out;
