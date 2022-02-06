@@ -1156,6 +1156,24 @@ header {
   margin-left: 15px;
 }
 
+.backToTop, .backToTop:visited {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  color: #68b0c1;
+  opacity: 100%;
+  -webkit-transform: scale(300%);
+          transform: scale(300%);
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.backToTop:hover, .backToTop:visited:hover {
+  opacity: 50%;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
 footer {
   background-color: #171717;
   display: -webkit-box;

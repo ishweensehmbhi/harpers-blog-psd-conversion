@@ -424,3 +424,19 @@
 		margin-left: 15px;
 	}
 }
+
+.backToTop, .backToTop:visited {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  color: $primary;
+  opacity: 100%;
+  transform: scale(300%);
+  transition: opacity 0.3s;
+  &:hover {
+	opacity: 50%;
+  	transition: opacity 0.3s;
+	}
+}
+
