@@ -839,49 +839,6 @@ header {
   padding-bottom: 10px;
 }
 
-.imgGallery {
-  padding: 80px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.imgGallery .imgGalleryItem {
-  padding: 15px;
-  width: calc(100% / 3 - 15px);
-  -webkit-transition: border-radius 0.25s, opacity 0.25s;
-  transition: border-radius 0.25s, opacity 0.25s;
-}
-.imgGallery .imgGalleryItem img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-width: 100%;
-}
-.imgGallery .imgGalleryItem a:hover,
-.imgGallery .imgGalleryItem a:focus,
-.imgGallery .imgGalleryItem a:active {
-  opacity: 0.8;
-  cursor: pointer;
-  -webkit-filter: drop-shadow(1px 1px 2px #171717);
-          filter: drop-shadow(1px 1px 2px #171717);
-  border: transparent;
-}
-.imgGallery .imgGalleryItem a:hover img,
-.imgGallery .imgGalleryItem a:focus img,
-.imgGallery .imgGalleryItem a:active img {
-  border-radius: 5%;
-  -webkit-transition: border-radius 0.25s, opacity 0.25s;
-  transition: border-radius 0.25s, opacity 0.25s;
-}
-
 /* contact page styling */
 .contact {
   background-color: #f6f6f6;
@@ -1156,24 +1113,128 @@ header {
   margin-left: 15px;
 }
 
-.backToTop, .backToTop:visited {
+.backToTop,
+.backToTop:visited {
   display: none;
   position: fixed;
   bottom: 50px;
   left: 50px;
-  color: #68b0c1;
+  color: #f38d8d;
   opacity: 100%;
-  -webkit-transform: scale(300%);
-          transform: scale(300%);
+  -webkit-transform: scale(400%);
+          transform: scale(400%);
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
-.backToTop:hover, .backToTop:visited:hover {
+.backToTop:hover,
+.backToTop:visited:hover {
   opacity: 50%;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 600px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #eeaeca;
+  background: -webkit-gradient(linear, left top, left bottom, from(#68b0c1), to(rgba(185, 221, 231, 0.9331932602)));
+  background: linear-gradient(180deg, #68b0c1 0%, rgba(185, 221, 231, 0.9331932602) 100%);
+}
+.gallery .carouselContainer {
+  position: relative;
+  background: #f6f6f6;
+  border-radius: 2%;
+}
+.gallery ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+.gallery .carouselNext {
+  right: -30px;
+}
+.gallery .carouselPrevious {
+  left: -30px;
+}
+.gallery li {
+  display: none;
+  padding: 15px;
+}
+.gallery li img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.gallery .currentlyActive {
+  display: block;
+}
+.gallery a {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  -webkit-transform: scale(300%);
+          transform: scale(300%);
+  color: #f38d8d;
+  -webkit-transition: opacity 0.5s, color 0.5s, -webkit-filter 0.25s;
+  transition: opacity 0.5s, color 0.5s, -webkit-filter 0.25s;
+  transition: opacity 0.5s, color 0.5s, filter 0.25s;
+  transition: opacity 0.5s, color 0.5s, filter 0.25s, -webkit-filter 0.25s;
+}
+.gallery a:hover,
+.gallery a:focus {
+  opacity: 70%;
+  cursor: pointer;
+  color: #f38d8d;
+  -webkit-filter: drop-shadow(2px 2px 1px black);
+          filter: drop-shadow(2px 2px 1px black);
+  -webkit-transition: opacity 0.5s, color 0.5s, -webkit-filter 0.25s;
+  transition: opacity 0.5s, color 0.5s, -webkit-filter 0.25s;
+  transition: opacity 0.5s, color 0.5s, filter 0.25s;
+  transition: opacity 0.5s, color 0.5s, filter 0.25s, -webkit-filter 0.25s;
+}
+.gallery .fade {
+  -webkit-animation: fade;
+          animation: fade;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 footer {
   background-color: #171717;
   display: -webkit-box;
