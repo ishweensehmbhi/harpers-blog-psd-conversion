@@ -106,7 +106,7 @@ if (commentsForm) {
 		} else {
 			// Otherwise, we send an alert to the user.
 			alert(
-				`Sorry! We were unable to process your request, ${userName}. Please ensure all form fields are complete and try again.`
+				`Sorry! We were unable to process your request. Please ensure all form fields are complete and try again.`
 			);
 		}
 	});
@@ -123,4 +123,35 @@ function dateFormatter(today) {
 	return today.toLocaleDateString("en-US", options);
 }
 
-/* */
+/******/
+
+const contactForm = document.querySelector(".contactForm form");
+const span = document.querySelector(".closeButton");
+const modal = document.querySelector(".popUpModal");
+
+if (contactForm) {
+	contactForm.addEventListener("submit", function (e) {
+		e.preventDefault();
+
+		// Get user's data from the form and today's date
+		const userName = contactForm["name"].value;
+		const email = this["email"].value;
+		const comments = this["comments"].value;
+
+		if (userName && email && comments) {
+			modal.style.display = "block";
+		} else {
+			alert(
+				`Sorry! We were unable to process your request. Please ensure all form fields are complete and try again.`
+			);
+		}
+	});
+
+	// If the user clicks the "X" button in the pop-up,
+	span.onclick = function () {
+		// Change modal back to display none
+		modal.style.display = "none";
+		// Reload the page for good measure
+		location.reload();
+	};
+}

@@ -786,7 +786,7 @@ header {
 
 .harpersJourney {
   background-color: #f6f6f6;
-  padding: 200px 0 100px;
+  padding: 200px 0px 100px;
 }
 .harpersJourney .wrapper {
   display: -webkit-box;
@@ -842,6 +842,7 @@ header {
 /* contact page styling */
 .contact {
   background-color: #f6f6f6;
+  /* Modal Styling */
 }
 .contact .wrapper {
   display: -webkit-box;
@@ -854,6 +855,53 @@ header {
 }
 .contact .contactHeaderImg {
   height: 25vh;
+}
+.contact .popUpModal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(23, 23, 23, 0.8);
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact .modalContent {
+  background-color: #f6f6f6;
+  margin: auto;
+  padding: 30px;
+  border: 5px solid #b9dde7;
+  width: 50%;
+  text-align: center;
+}
+.contact .modalContent .modalCopy {
+  padding: 10px 0px 10px;
+  margin: 0;
+}
+.contact .modalContent .modalHeading {
+  padding: 20px 0px 20px;
+  font-size: 1.8rem;
+  color: #68b0c1;
+}
+.contact .modalContent .icon {
+  padding: 0px 0px 10px;
+  color: #68b0c1;
+}
+.contact .modalContent .closeButton {
+  color: #171717;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.contact .modalContent .closeButton:hover, .contact .modalContent .closeButton:focus {
+  color: #f38d8d;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  cursor: pointer;
 }
 
 .socialsBar {
@@ -1112,11 +1160,6 @@ header {
 .commentsForm input[type=email] {
   margin-left: 15px;
 }
-.commentsForm .errorMessage {
-  color: red;
-  padding: 0;
-  margin: 0;
-}
 
 .backToTop,
 .backToTop:visited {
@@ -1148,7 +1191,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 60px 0 60px;
+  padding: 60px 0px 60px;
 }
 .gallery .wrapper {
   display: -webkit-box;
@@ -1349,6 +1392,13 @@ footer {
   }
   .contact .wrapper .submitButton {
     margin-bottom: 30px;
+  }
+
+  .contact .modalContent {
+    width: 100%;
+  }
+  .contact .modalContent .closeButton {
+    font-size: 40px;
   }
 
   .contactHeaderImage::after {

@@ -72,6 +72,14 @@
 			margin-bottom: 30px;
 		}
 	}
+
+	.contact .modalContent {
+		width: 100%;
+		.closeButton {
+			font-size: 40px;
+		}
+	}
+
 	.contactHeaderImage::after {
 		font-size: 3rem;
 		line-height: 60px;
