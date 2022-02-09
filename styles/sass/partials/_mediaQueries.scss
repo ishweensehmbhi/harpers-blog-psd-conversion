@@ -299,18 +299,9 @@
 	.mobileNav {
 		display: block;
 	}
-
-	.imgGallery {
-		flex-direction: column;
-		.imgGalleryItem {
-			width: 100%;
-			display: flex;
-			justify-content: center;
-		}
-	}
 }
 
-// Adjust header for very small devices
+// Adjust header for very small devices, as well as smaller back to top button
 
 @media (max-width: 440px) {
 	.home .flexContainer .homeLogoContainer {
@@ -337,6 +328,14 @@
 	}
 	.asideTextContainer h4 {
 		text-align: center;
+	}
+
+	.backToTop,
+	.backToTop:visited {
+		bottom: 30px;
+		left: 30px;
+		transform: scale(300%);
+		transition: opacity 0.3s;
 	}
 }
 

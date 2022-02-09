@@ -444,19 +444,14 @@
 .gallery {
 	display: flex;
 	justify-content: center;
-	height: 600px;
 	align-items: center;
-	background: rgb(238, 174, 202);
-	background: linear-gradient(
-		180deg,
-		rgba($primary, 1) 0%,
-		rgba($quaternary, 0.933193260214242) 100%
-	);
+	padding: 60px 0 60px;
 
 	.carouselContainer {
 		position: relative;
 		background: $white;
 		border-radius: 2%;
+		box-shadow: 2px 2px 10px $black;
 	}
 
 	ul {
