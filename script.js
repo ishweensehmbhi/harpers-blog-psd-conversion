@@ -1,3 +1,4 @@
+/******/
 /* Back to top functionality for all pages */
 // Select the back-to-top button
 const scrollToTop = document.querySelector(".backToTop");
@@ -61,3 +62,65 @@ if (rightBtn) {
 		carouselImgList[imgIndex].classList.toggle("currentlyActive");
 	});
 }
+
+/******/
+/* Form Validation & Comment Posting */
+
+// Select specifically the Blog page form
+const commentsForm = document.querySelector(".commentsForm form");
+const commentsSection = document.querySelector(".commentSection");
+
+// If commentsForm exists
+if (commentsForm) {
+	commentsForm.addEventListener("submit", function (e) {
+		e.preventDefault();
+
+		// Get user's data from the form and today's date
+		const userName = this["name"].value;
+		const email = this["email"].value;
+		const comments = this["comments"].value;
+		const today = new Date();
+
+		// If the user has filled out the form, post the comment
+		// by creating a new "div" blogComment element and adding it to the end of the comments section.
+		if (userName && email && comments) {
+			const newComment = document.createElement("div");
+			newComment.classList.add("blogComment");
+			newComment.innerHTML = `
+				<div class="blogCommentImgContainer">
+					<img
+						src="./assets/blog-image-5.jpg"
+						alt="anonymous user placeholder image"
+					/>
+				</div>
+				<div class="blogCommentTextContainer">
+					<p class="dateText">
+						${dateFormatter(today)} by ${userName}
+					</p>
+					<p class="commentText">
+						${comments}
+					</p>
+				</div>
+			`;
+			commentsSection.appendChild(newComment);
+		} else {
+			// Otherwise, we send an alert to the user.
+			alert(
+				`Sorry! We were unable to process your request, ${userName}. Please ensure all form fields are complete and try again.`
+			);
+		}
+	});
+}
+
+/* Format the date */
+function dateFormatter(today) {
+	let options = {
+		weekday: "long",
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+	};
+	return today.toLocaleDateString("en-US", options);
+}
+
+/* */

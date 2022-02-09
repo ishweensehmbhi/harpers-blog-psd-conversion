@@ -1,398 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Blog Post | Harper's Blog</title>
-		<link rel="stylesheet" href="./styles/styles.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link
-			rel="preconnect"
-			href="https://fonts.gstatic.com"
-			crossorigin
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-			crossorigin="anonymous"
-		/>
-	</head>
-	<body>
-		<header id="home">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Blog Post | Harper's Blog</title>
+	<link rel="stylesheet" href="./styles/styles.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+		crossorigin="anonymous" />
+</head>
+
+<body>
+	<header id="home">
+		<div class="wrapper">
+			<nav class="desktopNav">
+				<ul class="pageNav">
+					<li class="navItem">
+						<a href="./index.html">HOME</a>
+					</li>
+					<li class="navItem">
+						<a href="./index.html#about">ABOUT</a>
+					</li>
+					<li class="navLogo">
+						<p>HARPER</p>
+					</li>
+					<li class="navItem">
+						<a href="./blogPost.html">BLOG</a>
+					</li>
+					<li class="navItem">
+						<a href="./contact.html">CONTACT</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- desktop nav ends  -->
+
+			<!-- mobile nav begins  -->
+			<nav class="mobileNav">
+				<ul class="iconContainer">
+					<li class="iconItem">
+						<i class="fas fa-bars"></i>
+						<ul class="subMenu">
+							<li>
+								<a href="./index.html">HOME</a>
+							</li>
+							<li>
+								<a href="#about">ABOUT</a>
+							</li>
+							<li>
+								<a href="./blogPost.html">BLOG</a>
+							</li>
+							<li>
+								<a href="./contact.html">CONTACT</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<!-- mobile nav ends  -->
+		</div>
+		<!-- div.wrapper ends  -->
+	</header>
+	<!-- header ends  -->
+
+	<!--  -->
+	<!-- HEADER IMG section begins  -->
+	<section class="headerImage blogHeaderImage">
+		<img src="./assets/blog-image-1.jpg" alt="" />
+		<!-- use an after for BLOG?  -->
+	</section>
+
+	<!-- main begins  -->
+	<main>
+		<!-- BLOG section begins -->
+		<section id="blog" class="blog">
 			<div class="wrapper">
-				<nav class="desktopNav">
-					<ul class="pageNav">
-						<li class="navItem">
-							<a href="./index.html">HOME</a>
-						</li>
-						<li class="navItem">
-							<a href="./index.html#about">ABOUT</a>
-						</li>
-						<li class="navLogo">
-							<p>HARPER</p>
-						</li>
-						<li class="navItem">
-							<a href="./blogPost.html">BLOG</a>
-						</li>
-						<li class="navItem">
-							<a href="./contact.html">CONTACT</a>
-						</li>
-					</ul>
-				</nav>
-				<!-- desktop nav ends  -->
+				<aside class="blogAside">
+					<div class="firstAsideSection">
+						<div class="asideImgContainer">
+							<img src="./assets/blog-image-2.jpg"
+								alt="Harper laying down on the floor next to a teal wall" />
+						</div>
+						<div class="asideTextContainer">
+							<h4>ABOUT HARPER</h4>
+							<p>
+								Lorem ipsum dolor sit,
+								amet consectetur
+								adipisicing elit. Quam,
+								molestias.
+								<a href="#">Find out more.</a>
+							</p>
+						</div>
+					</div>
+					<div class="secondAsideSection">
+						<h4>RECENT POSTS</h4>
+						<ul>
+							<li>
+								<a href="#" class="recentPostLink">Lorem ipsum dolor
+									sit.</a>
+							</li>
+							<li>
+								<a href="#" class="recentPostLink">
+									Amet consectetur
+									adipisicing.</a>
+							</li>
+							<li>
+								<a href="#" class="recentPostLink">Repellat,
+									numquam?</a>
+							</li>
+							<li>
+								<a href="#" class="recentPostLink">Ipsum dolor</a>
+							</li>
+						</ul>
+					</div>
+				</aside>
+				<!-- Aside ends  -->
 
-				<!-- mobile nav begins  -->
-				<nav class="mobileNav">
-					<ul class="iconContainer">
-						<li class="iconItem">
-							<i class="fas fa-bars"></i>
-							<ul class="subMenu">
-								<li>
-									<a href="./index.html"
-										>HOME</a
-									>
-								</li>
-								<li>
-									<a href="#about">ABOUT</a>
-								</li>
-								<li>
-									<a href="./blogPost.html"
-										>BLOG</a
-									>
-								</li>
-								<li>
-									<a href="./contact.html"
-										>CONTACT</a
-									>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-				<!-- mobile nav ends  -->
-			</div>
-			<!-- div.wrapper ends  -->
-		</header>
-		<!-- header ends  -->
+				<!-- Blog content begins  -->
+				<div class="blogContent">
+					<div class="blogPost">
+						<h3>
+							MY FAVOURITE TRAVEL DESTINATIONS
+						</h3>
+						<p>
+							Monday, October 8th, 2018 by
+							Harper
+						</p>
+						<p>
+							Lorem ipsum, dolor sit amet
+							consectetur adipisicing elit.
+							Atque quidem quaerat veritatis
+							debitis. Assumenda nihil
+							dolores, dignissimos eaque
+							quidem quis aperiam sint non
+							exercitationem repudiandae
+							aliquam enim iure explicabo
+							nisi!
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet
+							consectetur adipisicing elit.
+							Totam beatae voluptatum,
+							doloremque inventore sequi
+							quisquam quia non? Eveniet eaque
+							cumque aliquam corrupti ut
+							voluptates ipsa! Rerum placeat
+							aut quia praesentium veritatis
+							sunt optio necessitatibus, ex
+							accusantium alias quisquam
+							suscipit commodi.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet
+							consectetur adipisicing elit.
+							Deleniti quidem odio consequatur
+							dolores sed maiores nemo dolorem
+							error! Autem ullam quis harum
+							maxime nemo pariatur debitis
+							similique sit velit error
+							incidunt impedit eos doloremque
+							sapiente ea corporis veniam
+							beatae amet, itaque quos
+							expedita dolore veritatis ipsa.
+							Error dolorem quod facilis nam
+							tempora, illo, fugiat architecto
+							iusto aliquid eum fugit
+							praesentium ducimus et molestias
+							officiis reiciendis veniam.
+							Quasi saepe iste voluptatum.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet
+							consectetur, adipisicing elit.
+							Commodi, laboriosam! Nobis,
+							numquam magnam quod earum
+							inventore at, cum officiis unde
+							quas soluta nihil accusamus
+							facere eveniet non
+							necessitatibus eligendi quae?
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet
+							consectetur adipisicing elit.
+							Incidunt officia sunt aut
+							dolores repudiandae laborum,
+							cumque sit aliquam explicabo
+							sint facere hic saepe, tempora
+							cupiditate ipsa iusto quidem
+							exercitationem? Culpa sequi
+							quibusdam dolorum accusamus
+							error reprehenderit, cupiditate
+							aliquid nihil quia?
+						</p>
+						<p>
+							Lorem ipsum dolor, sit amet
+							consectetur adipisicing elit.
+							Quis nemo dolore ullam ipsa
+							excepturi, sequi autem
+							doloremque? Quam blanditiis
+							ipsam eveniet, minus aliquid, ex
+							voluptatum voluptates eius quas
+							earum delectus rerum fuga nam!
+							Ducimus, repudiandae! Quaerat id
+							consectetur tempora quod, sit
+							suscipit explicabo cumque vero.
+							Tempore, impedit excepturi
+							architecto iure officia
+							praesentium, asperiores eaque
+							quidem perferendis ipsam
+							necessitatibus accusamus
+							nostrum? Deserunt, minus. Nulla
+							alias ratione, voluptatum in
+							dignissimos maiores provident.
+						</p>
+					</div>
+					<!-- blogPost ends here  -->
 
-		<!--  -->
-		<!-- HEADER IMG section begins  -->
-		<section class="headerImage blogHeaderImage">
-			<img src="./assets/blog-image-1.jpg" alt="" />
-			<!-- use an after for BLOG?  -->
-		</section>
-
-		<!-- main begins  -->
-		<main>
-			<!-- BLOG section begins -->
-			<section id="blog" class="blog">
-				<div class="wrapper">
-					<aside class="blogAside">
-						<div class="firstAsideSection">
-							<div class="asideImgContainer">
-								<img
-									src="./assets/blog-image-2.jpg"
-									alt="Harper laying down on the floor next to a teal wall"
-								/>
+					<!-- Comments section begins here  -->
+					<div class="commentSection">
+						<div class="blogComment">
+							<div class="blogCommentImgContainer">
+								<img src="./assets/blog-image-3.jpg" alt="profile photo of maggie" />
 							</div>
-							<div class="asideTextContainer">
-								<h4>ABOUT HARPER</h4>
-								<p>
-									Lorem ipsum dolor sit,
-									amet consectetur
-									adipisicing elit. Quam,
-									molestias.
-									<a href="#"
-										>Find out more.</a
-									>
+							<div class="blogCommentTextContainer">
+								<p class="dateText">
+									Tuesday, October
+									9th, 2018 by Maggie
+								</p>
+								<p class="commentText">
+									Lorem ipsum dolor
+									sit amet consectetur
+									adipisicing elit.
+									Neque soluta
+									accusantium dicta
+									praesentium.
+									Placeat, quasi quis
+									perspiciatis
+									quisquam consectetur
+									facere.
 								</p>
 							</div>
 						</div>
-						<div class="secondAsideSection">
-							<h4>RECENT POSTS</h4>
-							<ul>
-								<li>
-									<a
-										href="#"
-										class="recentPostLink"
-										>Lorem ipsum dolor
-										sit.</a
-									>
-								</li>
-								<li>
-									<a
-										href="#"
-										class="recentPostLink"
-									>
-										Amet consectetur
-										adipisicing.</a
-									>
-								</li>
-								<li>
-									<a
-										href="#"
-										class="recentPostLink"
-										>Repellat,
-										numquam?</a
-									>
-								</li>
-								<li>
-									<a
-										href="#"
-										class="recentPostLink"
-										>Ipsum dolor</a
-									>
-								</li>
-							</ul>
-						</div>
-					</aside>
-					<!-- Aside ends  -->
-
-					<!-- Blog content begins  -->
-					<div class="blogContent">
-						<div class="blogPost">
-							<h3>
-								MY FAVOURITE TRAVEL DESTINATIONS
-							</h3>
-							<p>
-								Monday, October 8th, 2018 by
-								Harper
-							</p>
-							<p>
-								Lorem ipsum, dolor sit amet
-								consectetur adipisicing elit.
-								Atque quidem quaerat veritatis
-								debitis. Assumenda nihil
-								dolores, dignissimos eaque
-								quidem quis aperiam sint non
-								exercitationem repudiandae
-								aliquam enim iure explicabo
-								nisi!
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet
-								consectetur adipisicing elit.
-								Totam beatae voluptatum,
-								doloremque inventore sequi
-								quisquam quia non? Eveniet eaque
-								cumque aliquam corrupti ut
-								voluptates ipsa! Rerum placeat
-								aut quia praesentium veritatis
-								sunt optio necessitatibus, ex
-								accusantium alias quisquam
-								suscipit commodi.
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet
-								consectetur adipisicing elit.
-								Deleniti quidem odio consequatur
-								dolores sed maiores nemo dolorem
-								error! Autem ullam quis harum
-								maxime nemo pariatur debitis
-								similique sit velit error
-								incidunt impedit eos doloremque
-								sapiente ea corporis veniam
-								beatae amet, itaque quos
-								expedita dolore veritatis ipsa.
-								Error dolorem quod facilis nam
-								tempora, illo, fugiat architecto
-								iusto aliquid eum fugit
-								praesentium ducimus et molestias
-								officiis reiciendis veniam.
-								Quasi saepe iste voluptatum.
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet
-								consectetur, adipisicing elit.
-								Commodi, laboriosam! Nobis,
-								numquam magnam quod earum
-								inventore at, cum officiis unde
-								quas soluta nihil accusamus
-								facere eveniet non
-								necessitatibus eligendi quae?
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet
-								consectetur adipisicing elit.
-								Incidunt officia sunt aut
-								dolores repudiandae laborum,
-								cumque sit aliquam explicabo
-								sint facere hic saepe, tempora
-								cupiditate ipsa iusto quidem
-								exercitationem? Culpa sequi
-								quibusdam dolorum accusamus
-								error reprehenderit, cupiditate
-								aliquid nihil quia?
-							</p>
-							<p>
-								Lorem ipsum dolor, sit amet
-								consectetur adipisicing elit.
-								Quis nemo dolore ullam ipsa
-								excepturi, sequi autem
-								doloremque? Quam blanditiis
-								ipsam eveniet, minus aliquid, ex
-								voluptatum voluptates eius quas
-								earum delectus rerum fuga nam!
-								Ducimus, repudiandae! Quaerat id
-								consectetur tempora quod, sit
-								suscipit explicabo cumque vero.
-								Tempore, impedit excepturi
-								architecto iure officia
-								praesentium, asperiores eaque
-								quidem perferendis ipsam
-								necessitatibus accusamus
-								nostrum? Deserunt, minus. Nulla
-								alias ratione, voluptatum in
-								dignissimos maiores provident.
-							</p>
-						</div>
-						<!-- blogPost ends here  -->
-
-						<!-- Comments section begins here  -->
-						<div class="commentSection">
-							<div class="blogComment">
-								<div
-									class="blogCommentImgContainer"
-								>
-									<img
-										src="./assets/blog-image-3.jpg"
-										alt="profile photo of maggie"
-									/>
-								</div>
-								<div
-									class="blogCommentTextContainer"
-								>
-									<p class="dateText">
-										Tuesday, October
-										9th, 2018 by Maggie
-									</p>
-									<p class="commentText">
-										Lorem ipsum dolor
-										sit amet consectetur
-										adipisicing elit.
-										Neque soluta
-										accusantium dicta
-										praesentium.
-										Placeat, quasi quis
-										perspiciatis
-										quisquam consectetur
-										facere.
-									</p>
-								</div>
+						<!-- blogComment 1 ends here  -->
+						<div class="blogComment">
+							<div class="blogCommentImgContainer">
+								<img src="./assets/blog-image-4.jpg" alt="profile photo of daisy" />
 							</div>
-							<!-- blogComment 1 ends here  -->
-							<div class="blogComment">
-								<div
-									class="blogCommentImgContainer"
-								>
-									<img
-										src="./assets/blog-image-4.jpg"
-										alt="profile photo of daisy"
-									/>
-								</div>
-								<div
-									class="blogCommentTextContainer"
-								>
-									<p class="dateText">
-										Wednesday, October
-										10th, 2018 by Daisy
-									</p>
-									<p class="commentText">
-										Lorem ipsum dolor
-										sit amet consectetur
-										adipisicing elit.
-										Neque soluta
-										accusantium dicta
-										praesentium.
-										Placeat, quasi quis
-										perspiciatis
-										quisquam consectetur
-										facere.
-									</p>
-								</div>
+							<div class="blogCommentTextContainer">
+								<p class="dateText">
+									Wednesday, October
+									10th, 2018 by Daisy
+								</p>
+								<p class="commentText">
+									Lorem ipsum dolor
+									sit amet consectetur
+									adipisicing elit.
+									Neque soluta
+									accusantium dicta
+									praesentium.
+									Placeat, quasi quis
+									perspiciatis
+									quisquam consectetur
+									facere.
+								</p>
 							</div>
-							<!-- blogComment 2 ends here  -->
 						</div>
-
-						<!-- Comments form begins here  -->
-						<div class="commentsForm formContainer">
-							<form
-								action=""
-								class="commentsForm"
-								name="commentsForm"
-							>
-								<legend>Contact Harper</legend>
-								<label
-									for="name"
-									class="sr-only"
-									>Enter Your Name</label
-								>
-								<input
-									type="text"
-									name="name"
-									id="name"
-									placeholder="Name"
-									class="formTextInput"
-								/>
-								<label
-									for="email"
-									class="sr-only"
-									>Enter Your Email</label
-								>
-								<input
-									type="email"
-									name="email"
-									id="email"
-									placeholder="Email address"
-									class="formTextInput"
-								/>
-								<label
-									for="comments"
-									class="sr-only"
-									>Enter Your
-									Comments</label
-								>
-								<textarea
-									name="comments"
-									id="comments"
-									cols="30"
-									rows="10"
-									placeholder="Comment"
-								></textarea>
-								<button
-									class="submitButton"
-									type="submit"
-								>
-									POST COMMENT
-								</button>
-							</form>
-						</div>
-						<!-- commentsForm ends  -->
+						<!-- blogComment 2 ends here  -->
 					</div>
-					<!-- blogContent ends here  -->
-				</div>
-				<!-- wrapper ends -->
-			</section>
-			<!-- blog section ends  -->
-			<!-- back to top button  -->
-			<a class="backToTop" href="#home">
-				<i class="fas fa-chevron-circle-up" aria-label="Back To Top"></i>
-			</a>
-			<script src="./script.js"></script>
-		</main>
-		<!-- main ends  -->
 
-		<footer>
-			<p class="footerText">Copyright © 2018 HackerYou</p>
-		</footer>
-	</body>
+					<!-- Comments form begins here  -->
+					<div class="commentsForm formContainer">
+						<form action="" class="commentsForm" name="commentsForm">
+							<legend>Contact Harper</legend>
+							<label for="name" class="sr-only">Enter Your Name</label>
+							<input type="text" name="name" id="name" placeholder="Name"
+								class="formTextInput" />
+							<label for="email" class="sr-only">Enter Your Email</label>
+							<input type="email" name="email" id="email" placeholder="Email address"
+								class="formTextInput" />
+							<label for="comments" class="sr-only">Enter Your
+								Comments</label>
+							<textarea name="comments" id="comments" cols="30" rows="10"
+								placeholder="Comment"></textarea>
+							<button class="submitButton" type="submit">
+								POST COMMENT
+							</button>
+						</form>
+					</div>
+					<!-- commentsForm ends  -->
+				</div>
+				<!-- blogContent ends here  -->
+			</div>
+			<!-- wrapper ends -->
+		</section>
+		<!-- blog section ends  -->
+		<!-- back to top button  -->
+		<a class="backToTop" href="#home">
+			<i class="fas fa-chevron-circle-up" aria-label="Back To Top"></i>
+		</a>
+		<script src="./script.js"></script>
+	</main>
+	<!-- main ends  -->
+
+	<footer>
+		<p class="footerText">Copyright © 2018 HackerYou</p>
+	</footer>
+</body>
+
 </html>

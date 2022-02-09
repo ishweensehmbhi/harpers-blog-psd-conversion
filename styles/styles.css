@@ -1112,6 +1112,11 @@ header {
 .commentsForm input[type=email] {
   margin-left: 15px;
 }
+.commentsForm .errorMessage {
+  color: red;
+  padding: 0;
+  margin: 0;
+}
 
 .backToTop,
 .backToTop:visited {
