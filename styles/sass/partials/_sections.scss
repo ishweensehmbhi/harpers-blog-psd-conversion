@@ -229,6 +229,7 @@
 		border: 5px solid $quaternary;
 		width: 50%;
 		text-align: center;
+		animation: modalFadeIn 0.75s;
 
 		.modalCopy {
 			padding: 10px 0px 10px;
@@ -573,6 +574,15 @@
 @keyframes fade {
 	0% {
 		opacity: 0.75;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes modalFadeIn {
+	0% {
+		opacity: 0;
 	}
 	100% {
 		opacity: 1;

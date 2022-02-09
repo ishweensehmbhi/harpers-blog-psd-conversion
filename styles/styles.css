@@ -874,6 +874,8 @@ header {
   border: 5px solid #b9dde7;
   width: 50%;
   text-align: center;
+  -webkit-animation: modalFadeIn 0.75s;
+          animation: modalFadeIn 0.75s;
 }
 .contact .modalContent .modalCopy {
   padding: 10px 0px 10px;
@@ -1289,6 +1291,22 @@ header {
 @keyframes fade {
   0% {
     opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes modalFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes modalFadeIn {
+  0% {
+    opacity: 0;
   }
   100% {
     opacity: 1;
