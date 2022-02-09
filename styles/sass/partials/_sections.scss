@@ -447,11 +447,18 @@
 	align-items: center;
 	padding: 60px 0 60px;
 
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	.carouselContainer {
 		position: relative;
 		background: $white;
 		border-radius: 2%;
 		box-shadow: 2px 2px 10px $black;
+		width: 400px;
 	}
 
 	ul {
